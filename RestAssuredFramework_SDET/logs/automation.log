@@ -1,0 +1,51 @@
+22:29:26.305 [main] INFO  api.test.UserTests - *******Creating User*********
+22:29:29.500 [main] INFO  api.test.UserTests - *******User is created*********
+22:29:29.521 [main] INFO  api.test.UserTests - *******Reading User Info*********
+22:29:31.050 [main] INFO  api.test.UserTests - *******User Info is displayed*********
+22:29:31.062 [main] INFO  api.test.UserTests - *******Updating User*********
+22:29:32.727 [main] INFO  api.test.UserTests - *******User is updated*********
+22:29:32.727 [main] INFO  api.test.UserTests - *******Reading User Info*********
+22:29:34.440 [main] INFO  api.test.UserTests - *******User Info is displayed*********
+22:29:34.465 [main] INFO  api.test.UserTests - *******Deleting User*********
+22:29:36.229 [main] INFO  api.test.UserTests - *******User Deleted*********
+22:34:29.911 [main] DEBUG api.test.UserTests - debugging....
+22:34:29.922 [main] INFO  api.test.UserTests - *******Creating User*********
+22:34:33.125 [main] INFO  api.test.UserTests - *******User is created*********
+22:34:33.138 [main] INFO  api.test.UserTests - *******Reading User Info*********
+22:34:34.696 [main] INFO  api.test.UserTests - *******User Info is displayed*********
+22:34:34.701 [main] INFO  api.test.UserTests - *******Updating User*********
+22:34:36.475 [main] INFO  api.test.UserTests - *******User is updated*********
+22:34:36.475 [main] INFO  api.test.UserTests - *******Reading User Info*********
+22:34:37.948 [main] INFO  api.test.UserTests - *******User Info is displayed*********
+22:34:37.958 [main] INFO  api.test.UserTests - *******Deleting User*********
+22:34:39.501 [main] INFO  api.test.UserTests - *******User Deleted*********
+13:08:40.854 [main] INFO  api.test.UserTests2 - *******Creating User*********
+13:08:43.522 [main] INFO  api.test.UserTests2 - *******User is created*********
+13:08:43.535 [main] INFO  api.test.UserTests2 - *******Reading User Info*********
+13:08:45.030 [main] INFO  api.test.UserTests2 - *******User Info is displayed*********
+13:08:45.033 [main] INFO  api.test.UserTests2 - *******Updating User*********
+13:08:46.452 [main] INFO  api.test.UserTests2 - *******User is updated*********
+13:08:46.452 [main] INFO  api.test.UserTests2 - *******Reading User Info*********
+13:08:47.863 [main] INFO  api.test.UserTests2 - *******User Info is displayed*********
+13:08:47.868 [main] INFO  api.test.UserTests2 - *******Deleting User*********
+13:08:49.334 [main] INFO  api.test.UserTests2 - *******User Deleted*********
+13:35:20.155 [main] INFO  api.test.UserTests - *******Creating User*********
+13:35:22.928 [main] INFO  api.test.UserTests - *******User is created*********
+13:35:22.935 [main] INFO  api.test.UserTests - *******Reading User Info*********
+13:35:24.674 [main] INFO  api.test.UserTests - *******User Info is displayed*********
+13:35:24.676 [main] INFO  api.test.UserTests - *******Updating User*********
+13:35:26.340 [main] INFO  api.test.UserTests - *******User is updated*********
+13:35:26.340 [main] INFO  api.test.UserTests - *******Reading User Info*********
+13:35:27.999 [main] INFO  api.test.UserTests - *******User Info is displayed*********
+13:35:28.000 [main] INFO  api.test.UserTests - *******Deleting User*********
+13:35:29.638 [main] INFO  api.test.UserTests - *******User Deleted*********
+13:57:21.591 [main] INFO  api.test.UserTests - *******Creating User*********
+13:57:25.165 [main] INFO  api.test.UserTests - *******User is created*********
+13:57:25.177 [main] INFO  api.test.UserTests - *******Reading User Info*********
+13:57:27.239 [main] INFO  api.test.UserTests - *******User Info is displayed*********
+13:57:27.244 [main] INFO  api.test.UserTests - *******Updating User*********
+13:57:29.414 [main] INFO  api.test.UserTests - *******User is updated*********
+13:57:29.414 [main] INFO  api.test.UserTests - *******Reading User Info*********
+13:57:31.320 [main] INFO  api.test.UserTests - *******User Info is displayed*********
+13:57:31.325 [main] INFO  api.test.UserTests - *******Deleting User*********
+13:57:33.371 [main] INFO  api.test.UserTests - *******User Deleted*********
