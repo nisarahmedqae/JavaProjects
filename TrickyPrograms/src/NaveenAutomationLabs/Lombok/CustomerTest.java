@@ -10,7 +10,6 @@ public class CustomerTest {
 		customer.setActive(false);
 
 		System.out.println(customer);
-
 	}
 
 }
