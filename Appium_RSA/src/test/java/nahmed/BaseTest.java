@@ -3,6 +3,7 @@ package nahmed;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -30,11 +31,12 @@ public class BaseTest {
 		options.setApp(new File("src/test/java/resources/ApiDemos-debug.apk").getAbsolutePath());
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	@AfterClass
 	public void tearDown() {
-		driver.quit();
+		// driver.quit();
 		service.stop();
 	}
 
