@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-06T23:42:54 IST" name="Default suite" finished-at="2024-04-06T23:43:08 IST" duration-ms="13995">
+  <suite started-at="2024-04-07T22:23:03 IST" name="Default suite" finished-at="2024-04-07T22:23:20 IST" duration-ms="16721">
     <groups>
     </groups>
-    <test started-at="2024-04-06T23:42:54 IST" name="Default test" finished-at="2024-04-06T23:43:08 IST" duration-ms="13995">
-      <class name="nahmed.AppiumBasics">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:nahmed.AppiumBasics@221a3fa4]" started-at="2024-04-06T23:42:54 IST" name="ConfigureAppium" finished-at="2024-04-06T23:43:00 IST" duration-ms="5828" status="PASS">
+    <test started-at="2024-04-07T22:23:03 IST" name="Default test" finished-at="2024-04-07T22:23:20 IST" duration-ms="16721">
+      <class name="nahmed.SwipeDemo2">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:nahmed.SwipeDemo2@7c37508a]" started-at="2024-04-07T22:23:03 IST" name="ConfigureAppium" finished-at="2024-04-07T22:23:12 IST" duration-ms="8635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="WifiSettingsName()[pri:0, instance:nahmed.AppiumBasics@221a3fa4]" started-at="2024-04-06T23:43:00 IST" name="WifiSettingsName" finished-at="2024-04-06T23:43:08 IST" duration-ms="8132" status="PASS">
+        <test-method signature="SwipeDemoTest()[pri:0, instance:nahmed.SwipeDemo2@7c37508a]" started-at="2024-04-07T22:23:12 IST" name="SwipeDemoTest" finished-at="2024-04-07T22:23:20 IST" duration-ms="8027" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WifiSettingsName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nahmed.AppiumBasics@221a3fa4]" started-at="2024-04-06T23:43:08 IST" name="tearDown" finished-at="2024-04-06T23:43:08 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- SwipeDemoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nahmed.SwipeDemo2@7c37508a]" started-at="2024-04-07T22:23:20 IST" name="tearDown" finished-at="2024-04-07T22:23:20 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- nahmed.AppiumBasics -->
+      </class> <!-- nahmed.SwipeDemo2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
