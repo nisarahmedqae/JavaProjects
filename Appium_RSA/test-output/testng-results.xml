@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-13T19:11:04 IST" name="Default suite" finished-at="2024-04-13T19:11:23 IST" duration-ms="19382">
+  <suite started-at="2024-04-13T23:42:25 IST" name="Default suite" finished-at="2024-04-13T23:42:42 IST" duration-ms="17089">
     <groups>
     </groups>
-    <test started-at="2024-04-13T19:11:04 IST" name="Default test" finished-at="2024-04-13T19:11:23 IST" duration-ms="19382">
-      <class name="eCommerce.eCommerce_tc_2">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:eCommerce.eCommerce_tc_2@1033576a]" started-at="2024-04-13T19:11:04 IST" name="ConfigureAppium" finished-at="2024-04-13T19:11:11 IST" duration-ms="6902" status="PASS">
+    <test started-at="2024-04-13T23:42:25 IST" name="Default test" finished-at="2024-04-13T23:42:42 IST" duration-ms="17089">
+      <class name="eCommerce.eCommerce_tc_3">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:eCommerce.eCommerce_tc_3@76494737]" started-at="2024-04-13T23:42:25 IST" name="ConfigureAppium" finished-at="2024-04-13T23:42:31 IST" duration-ms="5990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="FillForm()[pri:0, instance:eCommerce.eCommerce_tc_2@1033576a]" started-at="2024-04-13T19:11:11 IST" name="FillForm" finished-at="2024-04-13T19:11:23 IST" duration-ms="12440" status="PASS">
+        <test-method signature="FillForm()[pri:0, instance:eCommerce.eCommerce_tc_3@76494737]" started-at="2024-04-13T23:42:31 IST" name="FillForm" finished-at="2024-04-13T23:42:42 IST" duration-ms="11063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FillForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eCommerce.eCommerce_tc_2@1033576a]" started-at="2024-04-13T19:11:23 IST" name="tearDown" finished-at="2024-04-13T19:11:23 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:eCommerce.eCommerce_tc_3@76494737]" started-at="2024-04-13T23:42:42 IST" name="tearDown" finished-at="2024-04-13T23:42:42 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- eCommerce.eCommerce_tc_2 -->
+      </class> <!-- eCommerce.eCommerce_tc_3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

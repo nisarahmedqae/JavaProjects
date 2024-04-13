@@ -1,6 +1,7 @@
 package eCommerce;
 
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 
-public class eCommerce_tc_2 extends eBaseTest {
+public class eCommerce_tc_3 extends eBaseTest {
 
 	@Test
 	public void FillForm() throws InterruptedException {
@@ -25,18 +26,12 @@ public class eCommerce_tc_2 extends eBaseTest {
 		// Click on Shop button
 		driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/btnLetsShop")).click();
 
-		// Scrol to Jordan 6 Rings
-		scrollToElement("Jordan 6 Rings");
-
-		// Get product list
-		List<WebElement> productsList = driver.findElements(AppiumBy
-				.xpath("//android.widget.TextView[@resource-id='com.androidsample.generalstore:id/productName']"));
-
-		productsList.stream().filter(s -> s.getText().equalsIgnoreCase("Jordan 6 Rings")).forEach(s -> {
-			WebElement addToCartButton = driver.findElement(AppiumBy.xpath(
-					"//android.widget.TextView[@resource-id='com.androidsample.generalstore:id/productAddCart']"));
-			addToCartButton.click();
-		});
+		// Add products to cart
+		for (int i = 0; i < 2; i++) {
+			driver.findElements(AppiumBy.xpath(
+					"//android.widget.TextView[@resource-id='com.androidsample.generalstore:id/productAddCart']"))
+					.get(i).click();
+		}
 
 		// Go to cart menu
 		driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
@@ -48,10 +43,28 @@ public class eCommerce_tc_2 extends eBaseTest {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.attributeContains(cartTitleElement, "text", "Cart"));
 
-		String addedProducts = driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/productName"))
-				.getText();
+		List<WebElement> pricesList = driver
+				.findElements(AppiumBy.id("com.androidsample.generalstore:id/productPrice"));
 
-		Assert.assertEquals(addedProducts, "Jordan 6 Rings");
+		double calculatedSum = 0;
+		for (int i = 0; i < pricesList.size(); i++) {
+			String price = pricesList.get(i).getText();
+			String splittedPrice = price.substring(1);
+			double parsedAmount = Double.parseDouble(splittedPrice);
+			System.out.println(parsedAmount);
+
+			calculatedSum = calculatedSum + parsedAmount;
+		}
+		System.out.println(calculatedSum);
+
+		String totalAmount = driver
+				.findElement(AppiumBy.xpath(
+						"//android.widget.TextView[@resource-id='com.androidsample.generalstore:id/totalAmountLbl']"))
+				.getText();
+		String splittedTotalAmount = totalAmount.substring(2);
+		double parsedTotalAmount = Double.parseDouble(splittedTotalAmount);
+		System.out.println(parsedTotalAmount);
+
 	}
 
 }
