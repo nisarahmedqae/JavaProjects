@@ -33,11 +33,12 @@ public class eBaseTest {
 		service.start();
 
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("Pixel");
+		options.setDeviceName("Pixel 3");
+		options.setChromedriverExecutable("C:\\SeleniumDownloadedFiles\\chromedriver_win32\\chromedriver.exe");
 		options.setApp(new File("src/test/java/resources/General-Store.apk").getAbsolutePath());
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	public void longPressAction(WebElement ele) {

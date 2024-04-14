@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-13T23:42:25 IST" name="Default suite" finished-at="2024-04-13T23:42:42 IST" duration-ms="17089">
+  <suite started-at="2024-04-14T17:07:24 IST" name="Default suite" finished-at="2024-04-14T17:07:42 IST" duration-ms="18298">
     <groups>
     </groups>
-    <test started-at="2024-04-13T23:42:25 IST" name="Default test" finished-at="2024-04-13T23:42:42 IST" duration-ms="17089">
-      <class name="eCommerce.eCommerce_tc_3">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:eCommerce.eCommerce_tc_3@76494737]" started-at="2024-04-13T23:42:25 IST" name="ConfigureAppium" finished-at="2024-04-13T23:42:31 IST" duration-ms="5990" status="PASS">
+    <test started-at="2024-04-14T17:07:24 IST" name="Default test" finished-at="2024-04-14T17:07:42 IST" duration-ms="18298">
+      <class name="mobileBrowser.MobileBrowserTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:mobileBrowser.MobileBrowserTest@496bc455]" started-at="2024-04-14T17:07:24 IST" name="ConfigureAppium" finished-at="2024-04-14T17:07:35 IST" duration-ms="10538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="FillForm()[pri:0, instance:eCommerce.eCommerce_tc_3@76494737]" started-at="2024-04-13T23:42:31 IST" name="FillForm" finished-at="2024-04-13T23:42:42 IST" duration-ms="11063" status="PASS">
+        <test-method signature="browserTest()[pri:0, instance:mobileBrowser.MobileBrowserTest@496bc455]" started-at="2024-04-14T17:07:35 IST" name="browserTest" finished-at="2024-04-14T17:07:40 IST" duration-ms="5339" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FillForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eCommerce.eCommerce_tc_3@76494737]" started-at="2024-04-13T23:42:42 IST" name="tearDown" finished-at="2024-04-13T23:42:42 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- browserTest -->
+        <test-method signature="angularWebsiteTest()[pri:2, instance:mobileBrowser.MobileBrowserTest@496bc455]" started-at="2024-04-14T17:07:40 IST" name="angularWebsiteTest" finished-at="2024-04-14T17:07:42 IST" duration-ms="2354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- angularWebsiteTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mobileBrowser.MobileBrowserTest@496bc455]" started-at="2024-04-14T17:07:42 IST" name="tearDown" finished-at="2024-04-14T17:07:42 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- eCommerce.eCommerce_tc_3 -->
+      </class> <!-- mobileBrowser.MobileBrowserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

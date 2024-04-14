@@ -33,7 +33,7 @@ public class BaseTest {
 		service.start();
 
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("Pixel");
+		options.setDeviceName("Pixel 3");
 		options.setApp(new File("src/test/java/resources/ApiDemos-debug.apk").getAbsolutePath());
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
