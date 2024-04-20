@@ -1,168 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T23:16:22 IST" name="Default suite" finished-at="2023-12-04T23:16:22 IST" duration-ms="77">
+  <suite started-at="2024-04-16T21:01:53 IST" name="Suite" finished-at="2024-04-16T21:01:54 IST" duration-ms="50">
     <groups>
-      <group name="Smoke">
-        <method signature="day3.WebLoginCarLoan()[pri:0, instance:Tests.day3@3246fb96]" name="WebLoginCarLoan" class="Tests.day3"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-12-04T23:16:22 IST" name="Default test" finished-at="2023-12-04T23:16:22 IST" duration-ms="77">
-      <class name="Tests.day3">
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="8" status="PASS">
+    <test started-at="2024-04-16T21:01:53 IST" name="Test" finished-at="2024-04-16T21:01:54 IST" duration-ms="50">
+      <class name="TestNG_Order1.OrderTest1">
+        <test-method is-config="true" signature="BeforeSuite1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:53 IST" name="BeforeSuite1" finished-at="2024-04-16T21:01:53 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="ApiLoginCarLoan()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="ApiLoginCarLoan" finished-at="2023-12-04T23:16:22 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- BeforeSuite1 -->
+        <test-method is-config="true" signature="BeforeTest1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:53 IST" name="BeforeTest1" finished-at="2024-04-16T21:01:53 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ApiLoginCarLoan -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- BeforeTest1 -->
+        <test-method is-config="true" signature="BeforeClass1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="BeforeClass1" finished-at="2024-04-16T21:01:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method signature="MobileLoginCarLoan()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="MobileLoginCarLoan" finished-at="2023-12-04T23:16:22 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- BeforeClass1 -->
+        <test-method is-config="true" signature="BeforeMethod1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="BeforeMethod1" finished-at="2024-04-16T21:01:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MobileLoginCarLoan -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- BeforeMethod1 -->
+        <test-method signature="ClassOne_Test1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="ClassOne_Test1" finished-at="2024-04-16T21:01:54 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- ClassOne_Test1 -->
+        <test-method is-config="true" signature="AfterMethod1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="AfterMethod1" finished-at="2024-04-16T21:01:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- AfterMethod1 -->
+        <test-method is-config="true" signature="BeforeMethod1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="BeforeMethod1" finished-at="2024-04-16T21:01:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="WebLoginCarLoan()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="WebLoginCarLoan" finished-at="2023-12-04T23:16:22 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- BeforeMethod1 -->
+        <test-method signature="ClassOne_Test2()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="ClassOne_Test2" finished-at="2024-04-16T21:01:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WebLoginCarLoan -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- ClassOne_Test2 -->
+        <test-method is-config="true" signature="AfterMethod1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="AfterMethod1" finished-at="2024-04-16T21:01:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeClass" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by @Test on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\AppData\Local\Temp\testng-eclipse-1106181785\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by @Test on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\AppData\Local\Temp\testng-eclipse-1106181785\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- AfterMethod1 -->
+        <test-method is-config="true" signature="AfterClass1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="AfterClass1" finished-at="2024-04-16T21:01:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- AfterClass1 -->
+        <test-method is-config="true" signature="AfterTest1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="AfterTest1" finished-at="2024-04-16T21:01:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-12-04T23:16:22 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firstUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firstPassword]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- AfterTest1 -->
+        <test-method is-config="true" signature="AfterSuite1()[pri:0, instance:TestNG_Order1.OrderTest1@3bf9ce3e]" started-at="2024-04-16T21:01:54 IST" name="AfterSuite1" finished-at="2024-04-16T21:01:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- usingDataProvider -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[secondUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secondPassword]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- usingDataProvider -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-12-04T23:16:22 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[thirdUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[thirdPassword]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- usingDataProvider -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-      </class> <!-- Tests.day3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- AfterSuite1 -->
+      </class> <!-- TestNG_Order1.OrderTest1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
