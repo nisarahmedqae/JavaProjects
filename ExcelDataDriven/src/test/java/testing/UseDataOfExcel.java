@@ -41,6 +41,7 @@ public class UseDataOfExcel {
 				data[i][j] = formatter.formatCellValue(cell);
 			}
 		}
+		workbook.close();
 		return data;
 	}
 

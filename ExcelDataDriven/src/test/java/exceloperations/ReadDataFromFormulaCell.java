@@ -1,7 +1,6 @@
 package exceloperations;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -45,7 +44,7 @@ public class ReadDataFromFormulaCell {
 			}
 			System.out.println();
 		}
-
+		workbook.close();
 	}
 
 }

@@ -1,13 +1,9 @@
 package testing;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -16,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
-public class DataDrivenTest {
+public class DataDrivenTestUsingXLUtility {
 
 	WebDriver driver;
 	XSSFWorkbook workbook;
@@ -52,22 +48,19 @@ public class DataDrivenTest {
 
 	@DataProvider(name = "LoginData")
 	public Object[][] getData() throws IOException {
-		FileInputStream fis = new FileInputStream("..\\ExcelDataDriven\\src\\test\\java\\resources\\loginData.xlsx");
-		workbook = new XSSFWorkbook(fis);
-		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		String excelFilePath = "..\\ExcelDataDriven\\src\\test\\java\\resources\\loginData.xlsx";
+		XLUtility xlutil = new XLUtility(excelFilePath);
 
-		int rowCount = sheet.getPhysicalNumberOfRows() - 1; // Excluding header row
+		int rowCount = xlutil.getRowCount("Sheet1");
 		System.out.println("Row Count: " + rowCount);
-		int columnCount = sheet.getRow(0).getLastCellNum();
+		int columnCount = xlutil.getCellCount("Sheet1", 1);
 		System.out.println("Column Count: " + columnCount);
 
 		Object[][] data = new Object[rowCount][columnCount];
 
 		for (int i = 0; i < rowCount; i++) {
-			XSSFRow row = sheet.getRow(i + 1); // Adding 1 to skip header row
 			for (int j = 0; j < columnCount; j++) {
-				XSSFCell cell = row.getCell(j);
-				data[i][j] = formatter.formatCellValue(cell);
+				data[i][j] = xlutil.getCellData("Sheet1", i + 1, j);
 			}
 		}
 		return data;

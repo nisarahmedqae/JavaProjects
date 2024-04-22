@@ -42,7 +42,7 @@ public class ReadingExcel {
 			}
 			System.out.println();
 		}
-
+		workbook.close();
 	}
 
 }

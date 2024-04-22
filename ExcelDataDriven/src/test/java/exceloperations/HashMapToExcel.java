@@ -39,8 +39,8 @@ public class HashMapToExcel {
 		workbook.write(fos);
 
 		fos.close();
+		workbook.close();
 		System.out.println("Done");
-
 	}
 
 }

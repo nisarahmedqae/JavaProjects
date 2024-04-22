@@ -28,6 +28,8 @@ public class ExcelToHashMap {
 		}
 
 		data.forEach((k, v) -> System.out.println(k + " : " + v));
+		
+		workbook.close();
 	}
 
 }
