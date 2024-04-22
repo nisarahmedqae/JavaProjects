@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testing.UseDataOfExcel">
+      <class name="testing.DataDrivenTest">
         <methods>
-          <include name="testExcelData"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="1 2 3"/>
         </methods>
-      </class> <!-- testing.UseDataOfExcel -->
+      </class> <!-- testing.DataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

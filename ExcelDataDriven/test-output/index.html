@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\iamni\AppData\Local\Temp\testng-eclipse-373933012\testng-customsuite.xml</span>
+                    <span>C:\Users\iamni\AppData\Local\Temp\testng-eclipse--868473113\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testing.DataDrivenTest" class="method navigator-link" hash-for-method="loginTest(adm@yourstore.com, adm, Invalid)">loginTest(adm@yourstore.com, adm, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testing.DataDrivenTest" class="method navigator-link" hash-for-method="loginTest(admin@yourstore.com, adm, Invalid)">loginTest(admin@yourstore.com, adm, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testing.DataDrivenTest" class="method navigator-link" hash-for-method="loginTest(min@yourstore.com, admin, Invalid)">loginTest(min@yourstore.com, admin, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,37 +128,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testing.UseDataOfExcel" class="method navigator-link" hash-for-method="testExcelData(6, Orange, Orange, 199, Summer)">testExcelData(6, Orange, Orange, 199, Summer)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testing.UseDataOfExcel" class="method navigator-link" hash-for-method="testExcelData(1, Mango, Yellow, 299, Summer)">testExcelData(1, Mango, Yellow, 299, Summer)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testing.UseDataOfExcel" class="method navigator-link" hash-for-method="testExcelData(2, Apple, Red, 345, Winter)">testExcelData(2, Apple, Red, 345, Winter)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testing.UseDataOfExcel" class="method navigator-link" hash-for-method="testExcelData(3, Papaya, Orange, 187, Spring)">testExcelData(3, Papaya, Orange, 187, Spring)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testing.UseDataOfExcel" class="method navigator-link" hash-for-method="testExcelData(4, Banana, Yellow, 69, All)">testExcelData(4, Banana, Yellow, 69, All)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testing.UseDataOfExcel" class="method navigator-link" hash-for-method="testExcelData(5, Kivi, Green, 399, Winter)">testExcelData(5, Kivi, Green, 399, Winter)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testing.UseDataOfExcel" class="method navigator-link" hash-for-method="testExcelData(sno, fruit_name, color, price, season)">testExcelData(sno, fruit_name, color, price, season)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testing.DataDrivenTest" class="method navigator-link" hash-for-method="loginTest(admin@yourstore.com, admin, Valid)">loginTest(admin@yourstore.com, admin, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -149,66 +143,152 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testing.UseDataOfExcel</span>
+              <img src="failed.png"/>
+              <span class="class-name">testing.DataDrivenTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testExcelData(6, Orange, Orange, 199, Summer)">
-                  </a> <!-- testExcelData(6, Orange, Orange, 199, Summer) -->
-                  <span class="method-name">testExcelData</span>
-                  <span class="parameters">(6, Orange, Orange, 199, Summer)</span>
+                  <a name="loginTest(adm@yourstore.com, adm, Invalid)">
+                  </a> <!-- loginTest(adm@yourstore.com, adm, Invalid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(adm@yourstore.com, adm, Invalid)</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;[Dashboard / nopCommerce administratio]n&gt; but was:&lt;[Your store. Logi]n&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at testing.DataDrivenTest.loginTest(DataDrivenTest.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testExcelData(1, Mango, Yellow, 299, Summer)">
-                  </a> <!-- testExcelData(1, Mango, Yellow, 299, Summer) -->
-                  <span class="method-name">testExcelData</span>
-                  <span class="parameters">(1, Mango, Yellow, 299, Summer)</span>
+                  <a name="loginTest(admin@yourstore.com, adm, Invalid)">
+                  </a> <!-- loginTest(admin@yourstore.com, adm, Invalid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(admin@yourstore.com, adm, Invalid)</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;[Dashboard / nopCommerce administratio]n&gt; but was:&lt;[Your store. Logi]n&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at testing.DataDrivenTest.loginTest(DataDrivenTest.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testExcelData(2, Apple, Red, 345, Winter)">
-                  </a> <!-- testExcelData(2, Apple, Red, 345, Winter) -->
-                  <span class="method-name">testExcelData</span>
-                  <span class="parameters">(2, Apple, Red, 345, Winter)</span>
+                  <a name="loginTest(min@yourstore.com, admin, Invalid)">
+                  </a> <!-- loginTest(min@yourstore.com, admin, Invalid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(min@yourstore.com, admin, Invalid)</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;[Dashboard / nopCommerce administratio]n&gt; but was:&lt;[Your store. Logi]n&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at testing.DataDrivenTest.loginTest(DataDrivenTest.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.DataDrivenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testExcelData(3, Papaya, Orange, 187, Spring)">
-                  </a> <!-- testExcelData(3, Papaya, Orange, 187, Spring) -->
-                  <span class="method-name">testExcelData</span>
-                  <span class="parameters">(3, Papaya, Orange, 187, Spring)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testExcelData(4, Banana, Yellow, 69, All)">
-                  </a> <!-- testExcelData(4, Banana, Yellow, 69, All) -->
-                  <span class="method-name">testExcelData</span>
-                  <span class="parameters">(4, Banana, Yellow, 69, All)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testExcelData(5, Kivi, Green, 399, Winter)">
-                  </a> <!-- testExcelData(5, Kivi, Green, 399, Winter) -->
-                  <span class="method-name">testExcelData</span>
-                  <span class="parameters">(5, Kivi, Green, 399, Winter)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testExcelData(sno, fruit_name, color, price, season)">
-                  </a> <!-- testExcelData(sno, fruit_name, color, price, season) -->
-                  <span class="method-name">testExcelData</span>
-                  <span class="parameters">(sno, fruit_name, color, price, season)</span>
+                  <a name="loginTest(admin@yourstore.com, admin, Valid)">
+                  </a> <!-- loginTest(admin@yourstore.com, admin, Valid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(admin@yourstore.com, admin, Valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,7 +296,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\iamni\AppData\Local\Temp\testng-eclipse-373933012\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\iamni\AppData\Local\Temp\testng-eclipse--868473113\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,7 +305,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testing.UseDataOfExcel&quot;/&gt;
+      &lt;class name=&quot;testing.DataDrivenTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -265,40 +345,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testExcelData')
-data.setCell(0, 2, 'testing.UseDataOfExcel')
-data.setCell(0, 3, 11);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'testing.DataDrivenTest')
+data.setCell(0, 3, 6836);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testExcelData')
-data.setCell(1, 2, 'testing.UseDataOfExcel')
-data.setCell(1, 3, 2);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'testing.DataDrivenTest')
+data.setCell(1, 3, 1174);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testExcelData')
-data.setCell(2, 2, 'testing.UseDataOfExcel')
-data.setCell(2, 3, 2);
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'testing.DataDrivenTest')
+data.setCell(2, 3, 1097);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testExcelData')
-data.setCell(3, 2, 'testing.UseDataOfExcel')
-data.setCell(3, 3, 1);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testExcelData')
-data.setCell(4, 2, 'testing.UseDataOfExcel')
-data.setCell(4, 3, 0);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testExcelData')
-data.setCell(5, 2, 'testing.UseDataOfExcel')
-data.setCell(5, 3, 0);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testExcelData')
-data.setCell(6, 2, 'testing.UseDataOfExcel')
-data.setCell(6, 3, 0);
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'testing.DataDrivenTest')
+data.setCell(3, 3, 975);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -324,35 +392,37 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testing.UseDataOfExcel</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testExcelData(sno, fruit_name, color, price, season)</span>
+              <div class="chronological-class-name">testing.DataDrivenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(admin@yourstore.com, admin, Valid)</span>
+                <span class="method-start">4240 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testExcelData(1, Mango, Yellow, 299, Summer)</span>
-                <span class="method-start">15 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(admin@yourstore.com, adm, Invalid)</span>
+                <span class="method-start">11080 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testExcelData(2, Apple, Red, 345, Winter)</span>
-                <span class="method-start">17 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(min@yourstore.com, admin, Invalid)</span>
+                <span class="method-start">12204 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testExcelData(3, Papaya, Orange, 187, Spring)</span>
-                <span class="method-start">21 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(adm@yourstore.com, adm, Invalid)</span>
+                <span class="method-start">13181 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testExcelData(4, Banana, Yellow, 69, All)</span>
-                <span class="method-start">22 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testExcelData(5, Kivi, Green, 399, Winter)</span>
-                <span class="method-start">24 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testExcelData(6, Orange, Orange, 199, Summer)</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14359 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

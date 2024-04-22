@@ -23,19 +23,19 @@ public class UseDataOfExcel {
 	@DataProvider(name = "ExcelData")
 	public Object[][] getData() throws IOException {
 		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir") + "/src/test/java/resources/ExcelDataFile.xlsx");
+				"..\\ExcelDataDriven\\src\\test\\java\\resources\\ExcelDataFile.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheet("CopySheet");
 
-		int rowCount = sheet.getPhysicalNumberOfRows();
-		System.out.println(rowCount);
+		int rowCount = sheet.getPhysicalNumberOfRows() - 1; // Excluding header row
+		System.out.println("Row Count: " + rowCount);
 		int columnCount = sheet.getRow(0).getLastCellNum();
-		System.out.println(columnCount);
+		System.out.println("Column Count: " + columnCount);
 
 		Object[][] data = new Object[rowCount][columnCount];
 
 		for (int i = 0; i < rowCount; i++) {
-			XSSFRow row = sheet.getRow(i);
+			XSSFRow row = sheet.getRow(i + 1); // Adding 1 to skip header row
 			for (int j = 0; j < columnCount; j++) {
 				XSSFCell cell = row.getCell(j);
 				data[i][j] = formatter.formatCellValue(cell);
