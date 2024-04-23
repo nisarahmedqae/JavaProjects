@@ -23,7 +23,7 @@ public class SwipeDemo2 extends BaseTest {
 		WebElement firstPhoto = driver.findElement(AppiumBy.xpath("//android.widget.ImageView[1]"));
 		Assert.assertEquals(firstPhoto.getAttribute("focusable"), "true");
 
-		swipeAction(firstPhoto, "left", 0.1);
+		swipeGesture(firstPhoto, "left", 0.1);
 
 		Assert.assertEquals(firstPhoto.getAttribute("focusable"), "false");
 	}

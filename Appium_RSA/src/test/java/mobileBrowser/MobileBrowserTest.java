@@ -29,7 +29,7 @@ public class MobileBrowserTest extends BrowserBaseTest {
 		driver.findElement(By.cssSelector("a[routerlink='/products']")).click();
 
 		// Scroll to DevOps
-		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,1000)", "");
+		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,1000)");
 
 		// fetch product names
 		List<WebElement> productList = driver.findElements(By.className("mt-0"));

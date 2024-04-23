@@ -70,7 +70,7 @@ public class eCommerce_tc_3 extends eBaseTest {
 
 		// long press terms conditions
 		WebElement termsClick = driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/termsButton"));
-		longPressAction(termsClick);
+		longClickGesture(termsClick);
 
 		String termsText = driver
 				.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id='android:id/message']")).getText();

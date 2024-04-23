@@ -15,7 +15,7 @@ public class ScrollDemo extends BaseTest {
 		scrollToElement("WebView");
 
 		// No prior idea where to scroll
-		// scrollToEndAction();
+		// scrollGesture();
 	}
 
 }

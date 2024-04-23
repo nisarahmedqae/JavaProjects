@@ -27,7 +27,7 @@ public class BrowserBaseTest {
 		service.start();
 
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("Pixel");
+		options.setDeviceName("Pixel 3");
 		options.setChromedriverExecutable("C:\\SeleniumDownloadedFiles\\chromedriver_win32\\chromedriver.exe");
 		options.setCapability("browserName", "Chrome");
 
@@ -37,7 +37,7 @@ public class BrowserBaseTest {
 
 	@AfterClass
 	public void tearDown() {
-		// driver.quit();
+		driver.quit();
 		service.stop();
 	}
 

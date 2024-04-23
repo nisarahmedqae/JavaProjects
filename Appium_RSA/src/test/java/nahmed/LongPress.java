@@ -22,7 +22,7 @@ public class LongPress extends BaseTest {
 		// Long Press on Custom Adapter
 		WebElement peopleNamesEle = driver
 				.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"People Names\"]"));
-		longPressAction(peopleNamesEle);
+		longClickGesture(peopleNamesEle);
 
 		// get text of long press menu option
 		String optionText = driver

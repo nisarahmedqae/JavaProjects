@@ -17,7 +17,7 @@ public class DragAndDropDemo extends BaseTest {
 
 		WebElement sourceElement = driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_dot_1"));
 
-		dragGestureAction(sourceElement, 645, 576);
+		dragGesture(sourceElement, 645, 576);
 
 		String draggedText = driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_result_text")).getText();
 		System.out.println(draggedText);

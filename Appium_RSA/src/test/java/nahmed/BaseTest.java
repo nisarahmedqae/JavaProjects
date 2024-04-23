@@ -40,17 +40,17 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
-	public void longPressAction(WebElement ele) {
+	public void longClickGesture(WebElement ele) {
 		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture",
 				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "duration", 2000));
 	}
 
-	public void swipeAction(WebElement ele, String direction, double percent) {
+	public void swipeGesture(WebElement ele, String direction, double percent) {
 		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of("elementId",
 				((RemoteWebElement) ele).getId(), "direction", direction, "percent", percent));
 	}
 
-	public void dragGestureAction(WebElement ele, int endX, int endY) {
+	public void dragGesture(WebElement ele, int endX, int endY) {
 		((JavascriptExecutor) driver).executeScript("mobile: dragGesture",
 				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "endX", endX, "endY", endY));
 	}
@@ -59,7 +59,7 @@ public class BaseTest {
 		((JavascriptExecutor) driver).executeScript("mobile: startActivity", ImmutableMap.of("intent", intent));
 	}
 
-	public void scrollToEndAction() {
+	public void scrollGesture() {
 		boolean canScrollMore;
 		do {
 			canScrollMore = (boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap
@@ -68,9 +68,8 @@ public class BaseTest {
 	}
 
 	public void scrollToElement(String elementName) {
-		String uiAutomatorExpression = String.format("new UiScrollable(new UiSelector()).scrollIntoView(text(\"%s\"));",
-				elementName);
-		driver.findElement(AppiumBy.androidUIAutomator(uiAutomatorExpression));
+		driver.findElement(AppiumBy
+				.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text('" + elementName + "'));"));
 	}
 
 	@AfterClass
