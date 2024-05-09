@@ -17,7 +17,7 @@ public class DownloadFilesInChrome {
 		map.put("download.default_directory", "C:\\SeleniumDownloadedFiles");
 
 		// Turn off ask everytime to save each file before downloading
-		map.put("download.promt_for_download", false);
+		map.put("download.prompt_for_download", false);
 
 		// download pdf files instead of opening it
 		map.put("plugins.always_open_pdf_externally", true);
