@@ -1,4 +1,4 @@
-package JavaMiscellaneous;
+package IntegerBased;
 
 import java.util.Arrays;
 

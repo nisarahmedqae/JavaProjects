@@ -1,4 +1,4 @@
-package JavaMiscellaneous;
+package InterviewQuestions.StringBased;
 
 public class PasswordStrength {
 
