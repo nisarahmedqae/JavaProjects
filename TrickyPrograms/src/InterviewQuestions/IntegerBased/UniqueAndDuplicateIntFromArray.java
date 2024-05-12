@@ -1,4 +1,4 @@
-package IntegerBased;
+package InterviewQuestions.IntegerBased;
 
 import java.util.ArrayList;
 import java.util.HashMap;

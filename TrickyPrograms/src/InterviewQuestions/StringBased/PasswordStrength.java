@@ -11,7 +11,6 @@ public class PasswordStrength {
 		// 2 uppercase
 		// 2 lowercase
 		// 1 special character
-
 	}
 
 	public static boolean passwordStrength(String password) {

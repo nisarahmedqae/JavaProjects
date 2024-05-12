@@ -3,6 +3,7 @@ package InterviewQuestions.StringBased;
 public class ChangeCaseOfString {
 
 	public static void main(String[] args) {
+		// Even numbers capital
 		String name = "mynameiskhan";
 		char[] charArr = name.toCharArray();
 
@@ -11,10 +12,10 @@ public class ChangeCaseOfString {
 		for (int i = 0; i < charArr.length; i++) {
 			char ch = charArr[i];
 
-			if (ch >= 'a' && ch <= 'z' && i % 2 != 0) {
-				ch = (char) (ch - ('a' - 'A'));
-			} else if (ch >= 'A' && ch <= 'Z' && i % 2 == 0) {
-				ch = (char) (ch + ('a' - 'A'));
+			if (i % 2 != 0 && ch >= 'a' && ch <= 'z') {
+				ch = (char) (ch - 32);
+			} else if (i % 2 == 0 && ch >= 'A' && ch <= 'Z') {
+				ch = (char) (ch + 32);
 			}
 
 			blank = blank + ch;
