@@ -8,6 +8,7 @@ public class NumberGuessingGame {
 		Scanner input = new Scanner(System.in);
 		int num = 5, guess;
 		System.out.println("Welcome to the number guessing game");
+		
 		do {
 			System.out.print("Please guess the number between 0 and 10: ");
 			guess = input.nextInt();

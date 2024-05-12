@@ -2,8 +2,6 @@ package NaveenAutomationLabs.StringPrograms;
 
 import java.util.stream.Stream;
 
-import com.google.common.base.CharMatcher;
-
 public class VowelsCount {
 
 	public static void main(String[] args) {

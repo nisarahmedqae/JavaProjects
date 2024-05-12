@@ -15,6 +15,15 @@ public class IsSortedArray {
 		}
 	}
 
+	public static boolean isIncreasing(int[] numArr) {
+		for (int i = 1; i < numArr.length; i++) {
+			if (numArr[i] < numArr[i - 1]) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	public static boolean isDecreasing(int[] numArr) {
 		for (int i = 1; i < numArr.length; i++) {
 			if (numArr[i] > numArr[i - 1]) {
@@ -24,12 +33,4 @@ public class IsSortedArray {
 		return true;
 	}
 
-	public static boolean isIncreasing(int[] numArr) {
-		for (int i = 1; i < numArr.length; i++) {
-			if (numArr[i] < numArr[i - 1]) {
-				return false;
-			}
-		}
-		return true;
-	}
 }

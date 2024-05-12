@@ -16,8 +16,8 @@ public class DiagonalSum2DArray {
 		long sum = leftSum + rightSum;
 
 		if (numArr.length % 2 != 0) {
-			int ind = numArr.length / 2;
-			sum -= numArr[ind][ind];
+			int index = numArr.length / 2;
+			sum -= numArr[index][index];
 		}
 
 		return sum;

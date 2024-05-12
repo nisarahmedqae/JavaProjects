@@ -32,13 +32,13 @@ public class DeleteElementFromArray {
 		// Create a new array with size = original size - count of the element to delete
 		int[] newArray = new int[array.length - count];
 
-		int newIndex = 0;
+		int index = 0;
 
 		// Copy elements to the new array, skipping the element to delete
 		for (int num : array) {
 			if (num != elementToDelete) {
-				newArray[newIndex] = num;
-				newIndex++;
+				newArray[index] = num;
+				index++;
 			}
 		}
 

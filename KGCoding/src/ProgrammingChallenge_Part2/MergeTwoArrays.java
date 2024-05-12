@@ -10,15 +10,15 @@ public class MergeTwoArrays {
 
 		int length = arr1.length + arr2.length;
 		int[] newArray = new int[length];
-		int i = 0;
+		int index = 0;
 
 		for (int a1 : arr1) {
-			newArray[i] = a1;
-			i++;
+			newArray[index] = a1;
+			index++;
 		}
 		for (int a2 : arr2) {
-			newArray[i] = a2;
-			i++;
+			newArray[index] = a2;
+			index++;
 		}
 
 		System.out.println(Arrays.toString(newArray));
