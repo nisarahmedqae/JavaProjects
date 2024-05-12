@@ -1,21 +1,21 @@
-package InterviewQuestions.StringBased;
+package InterviewQuestions.IntegerBased;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class UniqueAndDuplicateStringFromArray {
+public class FilteringIntFromArray {
 
 	public static void main(String[] args) {
 
-		String[] arr = { "nisar", "riyaz", "nisar", "kayenat", "riyaz", "nisar", "fatma" };
+		int[] arr = { 1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 9, 9 };
 
-		HashMap<String, Integer> countMap = new HashMap<>();
-		ArrayList<String> duplicateList = new ArrayList<>();
-		ArrayList<String> nonRepeatingList = new ArrayList<>();
-		ArrayList<String> uniqueList = new ArrayList<>();
+		HashMap<Integer, Integer> countMap = new HashMap<>();
+		ArrayList<Integer> duplicateList = new ArrayList<>();
+		ArrayList<Integer> nonRepeatingList = new ArrayList<>();
+		ArrayList<Integer> uniqueList = new ArrayList<>();
 
 		// Count occurrences of each element
-		for (String element : arr) {
+		for (int element : arr) {
 			if (countMap.get(element) == null) {
 				countMap.put(element, 1);
 			} else {
@@ -24,7 +24,7 @@ public class UniqueAndDuplicateStringFromArray {
 		}
 
 		// Categorize elements based on occurrence count
-		for (String element : countMap.keySet()) {
+		for (int element : countMap.keySet()) {
 			int count = countMap.get(element);
 
 			if (count > 1) {
@@ -37,9 +37,10 @@ public class UniqueAndDuplicateStringFromArray {
 			}
 		}
 
+		System.out.println("countMap Pairs: " + countMap);
 		System.out.println("Duplicate List: " + duplicateList);
 		System.out.println("Non-Repeating List: " + nonRepeatingList);
 		System.out.println("Unique List: " + uniqueList);
-		System.out.println("countMap Pairs: " + countMap);
+		
 	}
 }

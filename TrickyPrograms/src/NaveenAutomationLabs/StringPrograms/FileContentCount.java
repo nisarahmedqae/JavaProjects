@@ -19,6 +19,7 @@ public class FileContentCount {
 
 		BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
 		String currLine = bufferedReader.readLine().trim(); // remove before and after space from line
+
 		while (currLine != null) {
 			lineCount++;
 
@@ -32,6 +33,7 @@ public class FileContentCount {
 			}
 			currLine = bufferedReader.readLine();
 		}
+
 		System.out.println("total lines: " + lineCount);
 		System.out.println("total words: " + wordCount);
 		System.out.println("total chars: " + charCount);

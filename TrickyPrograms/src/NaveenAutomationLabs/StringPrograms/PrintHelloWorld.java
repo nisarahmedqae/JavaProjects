@@ -13,7 +13,7 @@ public class PrintHelloWorld {
 		}
 
 		// 2
-		if (System.out.append("Hello World") == null) {
+		if (System.out.append("Hello World" + "\n") != null) {
 
 		}
 

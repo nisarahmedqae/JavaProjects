@@ -35,10 +35,6 @@ public class VowelsCount {
 		long vowelCountStream = Stream.of(str.split("")).filter(ch -> "aeiou".contains(ch)).count();
 		System.out.println(vowelCountStream);
 
-		// using google guava
-		String st = "java examples";
-		int voCount = CharMatcher.anyOf("a,e,i,o,u").countIn(st);
-		System.out.println(voCount);
 	}
 
 }
