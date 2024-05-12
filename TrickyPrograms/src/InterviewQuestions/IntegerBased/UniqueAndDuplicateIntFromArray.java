@@ -26,11 +26,10 @@ public class UniqueAndDuplicateIntFromArray {
 		// Categorize elements based on occurrence count
 		for (int element : countMap.keySet()) {
 			int count = countMap.get(element);
-			
+
 			if (count > 1) {
 				duplicateList.add(element);
-			}
-			if (count == 1) {
+			} else if (count == 1) {
 				nonRepeatingList.add(element);
 			}
 			if (count >= 1) {

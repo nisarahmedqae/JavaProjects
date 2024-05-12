@@ -6,10 +6,10 @@ public class StringFirstLetter {
 		// wap to print first letter of each word in the string
 
 		String str1 = "I like java and automation";
-		String[] str2 = str1.split(" ");
+		String[] splittedStr = str1.split(" ");
 		
-		for (int i = 0; i < str2.length; i++) {
-			System.out.println(str2[i].charAt(0));
+		for (int i = 0; i < splittedStr.length; i++) {
+			System.out.println(splittedStr[i].charAt(0));
 		}
 
 	}
