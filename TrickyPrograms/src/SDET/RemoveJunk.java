@@ -8,7 +8,7 @@ public class RemoveJunk {
 		System.out.println(str);
 		
 		String str2 = "@$%$^&%* testing @$%$^&%* selenium @$%$^&%* java";
-		str2 = str2.replaceAll("[^a-zA-Z0-9]", "");
+		str2 = str2.replaceAll("[a-zA-Z0-9]", "");
 		System.out.println(str2);
 	}
 

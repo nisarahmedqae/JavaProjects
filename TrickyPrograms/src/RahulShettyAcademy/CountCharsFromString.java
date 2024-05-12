@@ -1,6 +1,6 @@
 package RahulShettyAcademy;
 
-public class CountString {
+public class CountCharsFromString {
 
 	public static void main(String[] args) {
 		// count string occurence

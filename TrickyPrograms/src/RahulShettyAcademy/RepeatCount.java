@@ -1,4 +1,5 @@
 package RahulShettyAcademy;
+
 import java.util.ArrayList;
 
 public class RepeatCount {
@@ -20,12 +21,13 @@ public class RepeatCount {
 						count++;
 					}
 				}
-				System.out.println("" + arr[i] + " is repeated " + count + " tines");
+
+				System.out.println("" + arr[i] + " is repeated " + count + " times");
+				if (count == 1) {
+					System.out.println("Unique number is " + arr[i]);
+				}
 			}
-			
-			if (count == 1) {
-				System.out.println("Unique number is " + arr[i]);
-			}
+
 		}
 	}
 

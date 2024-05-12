@@ -1,6 +1,6 @@
 package RahulShettyAcademy;
 
-public class MinNumber {
+public class MinNumberFromMatrix {
 
 	public static void main(String[] args) {
 		// print min and max number in multi dimensional array 3*3 matrix

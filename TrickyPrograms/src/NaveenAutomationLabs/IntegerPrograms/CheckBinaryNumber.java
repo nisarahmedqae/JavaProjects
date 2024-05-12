@@ -9,6 +9,7 @@ public class CheckBinaryNumber {
 		isBin(1011);
 	}
 
+	// Approach 1
 	private static void isBin(int number) {
 		if (String.valueOf(number).matches("[0-1]+")) {
 			System.out.println(number + " is a binary number");
@@ -17,6 +18,7 @@ public class CheckBinaryNumber {
 		}
 	}
 
+	// Approach 2
 	private static void isBinaryNumber(int number) {
 		boolean status = true;
 		int copyNum = number;

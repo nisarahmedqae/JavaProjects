@@ -5,6 +5,7 @@ public class ReverseString {
 	public static void main(String[] args) {
 		// Reverse a String
 
+		// Approach 2
 		String str = "ABCD";
 		String temp = "";
 
@@ -15,6 +16,7 @@ public class ReverseString {
 		}
 		System.out.println(temp);
 
+		// Approach 2
 		String str2 = "ABCD";
 		StringBuffer sb = new StringBuffer(str2);
 		StringBuffer revSb = sb.reverse();

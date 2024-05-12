@@ -5,28 +5,28 @@ import java.util.Arrays;
 public class BinarySearch {
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; // should be in sorted order
+		int[] arr = { 1, 2, 4, 5, 7, 8, 10 }; // should be in sorted order
 		boolean status = false;
 
 		int key = 7;
 
-		int low = 0; // 0th position
-		int high = arr.length - 1; // last position
+		int lowerIndex = 0; // 0th position
+		int higherIndex = arr.length - 1; // last position
 
-		while (low <= high) {
-			int mid = (low + high) / 2; // mid position
-			if (key == arr[mid]) {
+		while (lowerIndex <= higherIndex) {
+			int middleIndex = (lowerIndex + higherIndex) / 2; // mid position
+			if (key == arr[middleIndex]) {
 				System.out.println("Element Found");
 				status = true;
 				break;
 			}
 
-			if (key > arr[mid]) { // key greater than mid
-				low = mid + 1; // l moving right side
+			if (key > arr[middleIndex]) { // key greater than mid
+				lowerIndex = middleIndex + 1; // l moving right side
 			}
 
-			if (key < arr[mid]) { // key less than mid
-				high = mid - 1; // l moving left side
+			if (key < arr[middleIndex]) { // key less than mid
+				higherIndex = middleIndex - 1; // l moving left side
 			}
 		}
 		if (status == false) {
@@ -34,7 +34,8 @@ public class BinarySearch {
 		}
 
 		// Approach2
-		System.out.println(Arrays.binarySearch(arr, 9)); // it will display value at 8th position
+		int index = Arrays.binarySearch(arr, key);
+		System.out.println(index); // it will display value at 8th position
 	}
 
 }
