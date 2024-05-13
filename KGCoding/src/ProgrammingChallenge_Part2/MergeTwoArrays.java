@@ -9,18 +9,18 @@ public class MergeTwoArrays {
 		int[] arr2 = { 2, 4, 6, 8, 10 };
 
 		int length = arr1.length + arr2.length;
-		int[] newArray = new int[length];
+		int[] combinedArr = new int[length];
 		int index = 0;
 
 		for (int a1 : arr1) {
-			newArray[index] = a1;
+			combinedArr[index] = a1;
 			index++;
 		}
 		for (int a2 : arr2) {
-			newArray[index] = a2;
+			combinedArr[index] = a2;
 			index++;
 		}
 
-		System.out.println(Arrays.toString(newArray));
+		System.out.println(Arrays.toString(combinedArr));
 	}
 }

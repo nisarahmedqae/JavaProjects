@@ -1,9 +1,9 @@
 package ProgrammingChallenge_Part2;
 
-public class IsSortedArray {
+public class IsSortedIntArray {
 
 	public static void main(String[] args) {
-		int[] numArr = { 1, 2, 3, 4, 5 };
+		int[] numArr = { 1, 2, 3 };
 
 		boolean isInc = isIncreasing(numArr);
 		boolean isDec = isDecreasing(numArr);
@@ -16,8 +16,8 @@ public class IsSortedArray {
 	}
 
 	public static boolean isIncreasing(int[] numArr) {
-		for (int i = 1; i < numArr.length; i++) {
-			if (numArr[i] < numArr[i - 1]) {
+		for (int i = 0; i < numArr.length - 1; i++) {
+			if (numArr[i] > numArr[i + 1]) {
 				return false;
 			}
 		}
@@ -25,8 +25,8 @@ public class IsSortedArray {
 	}
 
 	public static boolean isDecreasing(int[] numArr) {
-		for (int i = 1; i < numArr.length; i++) {
-			if (numArr[i] > numArr[i - 1]) {
+		for (int i = 0; i < numArr.length - 1; i++) {
+			if (numArr[i] < numArr[i + 1]) {
 				return false;
 			}
 		}
