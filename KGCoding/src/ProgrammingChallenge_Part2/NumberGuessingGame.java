@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class NumberGuessingGame {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);

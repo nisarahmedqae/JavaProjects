@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PasswordChecker {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to Set your password\n");
