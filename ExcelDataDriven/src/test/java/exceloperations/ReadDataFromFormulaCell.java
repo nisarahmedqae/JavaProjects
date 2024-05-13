@@ -10,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadDataFromFormulaCell {
 
+	@SuppressWarnings("incomplete-switch")
 	public static void main(String[] args) throws IOException {
 		String excelFilePath = "..\\ExcelDataDriven\\src\\test\\java\\resources\\readformula.xlsx";
 		FileInputStream fis = new FileInputStream(excelFilePath);

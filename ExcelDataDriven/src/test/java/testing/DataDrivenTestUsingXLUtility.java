@@ -58,9 +58,9 @@ public class DataDrivenTestUsingXLUtility {
 
 		Object[][] data = new Object[rowCount][columnCount];
 
-		for (int i = 0; i < rowCount; i++) {
-			for (int j = 0; j < columnCount; j++) {
-				data[i][j] = xlutil.getCellData("Sheet1", i + 1, j);
+		for (int r = 0; r < rowCount; r++) {
+			for (int c = 0; c < columnCount; c++) {
+				data[r][c] = xlutil.getCellData("Sheet1", r + 1, c);
 			}
 		}
 		return data;

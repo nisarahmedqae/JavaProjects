@@ -11,6 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadingPasswordProtectedExcel {
 
+	@SuppressWarnings("incomplete-switch")
 	public static void main(String[] args) throws IOException {
 		String excelFilePath = "..\\ExcelDataDriven\\src\\test\\java\\resources\\customersLocked.xlsx";
 		FileInputStream fis = new FileInputStream(excelFilePath);

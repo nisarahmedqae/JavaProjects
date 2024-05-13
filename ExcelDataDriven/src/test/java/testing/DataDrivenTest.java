@@ -63,11 +63,11 @@ public class DataDrivenTest {
 
 		Object[][] data = new Object[rowCount][columnCount];
 
-		for (int i = 0; i < rowCount; i++) {
-			XSSFRow row = sheet.getRow(i + 1); // Adding 1 to skip header row
-			for (int j = 0; j < columnCount; j++) {
-				XSSFCell cell = row.getCell(j);
-				data[i][j] = formatter.formatCellValue(cell);
+		for (int r = 0; r < rowCount; r++) {
+			XSSFRow row = sheet.getRow(r + 1); // Adding 1 to skip header row
+			for (int c = 0; c < columnCount; c++) {
+				XSSFCell cell = row.getCell(c);
+				data[r][c] = formatter.formatCellValue(cell);
 			}
 		}
 		return data;
