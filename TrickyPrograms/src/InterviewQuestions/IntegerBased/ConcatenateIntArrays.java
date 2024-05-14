@@ -9,7 +9,8 @@ public class ConcatenateIntArrays {
 		int[] intArray1 = { 1, 2 };
 		int[] intArray2 = { 3, 4 };
 
-		int[] concatenatedIntArray = new int[intArray1.length + intArray2.length];
+		int arrLength = intArray1.length + intArray2.length;
+		int[] concatenatedIntArray = new int[arrLength];
 
 		int index = 0;
 		for (int element : intArray1) {

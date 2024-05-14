@@ -9,7 +9,8 @@ public class ConcatenateStringArrays {
 		String[] strArray1 = { "Hello", "World" };
 		String[] strArray2 = { "Java", "Selenium" };
 
-		String[] concatenatedStrArray = new String[strArray1.length + strArray2.length];
+		int arrLength = strArray1.length + strArray2.length;
+		String[] concatenatedStrArray = new String[arrLength];
 
 		int index = 0;
 		for (String element : strArray1) {
