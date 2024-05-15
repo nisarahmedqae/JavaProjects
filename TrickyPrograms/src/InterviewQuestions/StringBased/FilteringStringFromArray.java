@@ -27,14 +27,12 @@ public class FilteringStringFromArray {
 		for (String element : countMap.keySet()) {
 			int count = countMap.get(element);
 
-			if (count > 1) {
-				duplicateList.add(element);
-			} else if (count == 1) {
+			if (count == 1) {
 				nonRepeatingList.add(element);
+			} else if (count > 1) {
+				duplicateList.add(element);
 			}
-			if (count >= 1) {
-				uniqueList.add(element);
-			}
+			uniqueList.add(element);
 		}
 
 		System.out.println("countMap Pairs: " + countMap);

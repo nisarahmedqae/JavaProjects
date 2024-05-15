@@ -2,9 +2,6 @@ package NaveenAutomationLabs.IntegerPrograms;
 
 import java.util.Arrays;
 import java.util.OptionalDouble;
-import java.util.stream.Stream;
-
-import com.google.common.math.DoubleMath;
 
 public class AverageArray {
 
@@ -26,9 +23,6 @@ public class AverageArray {
 		OptionalDouble avg = Arrays.stream(arr).average();
 		System.out.println(avg.getAsDouble());
 
-		// guava
-		double avg1 = DoubleMath.mean(arr);
-		System.out.println(avg1);
 	}
 
 }

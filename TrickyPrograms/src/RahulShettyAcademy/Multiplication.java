@@ -2,6 +2,7 @@ package RahulShettyAcademy;
 
 public class Multiplication {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// print 5 Multiplication table without using Multiply operator
 		// Multiply 5*10=50 without using operator

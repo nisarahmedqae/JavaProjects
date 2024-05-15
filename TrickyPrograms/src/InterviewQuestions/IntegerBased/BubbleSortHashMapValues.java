@@ -16,30 +16,30 @@ public class BubbleSortHashMapValues {
 
 		System.out.println("HashMap before sorting: " + hashMap);
 
-		// Convert the entries of the HashMap into an array
-		Map.Entry<String, Integer>[] entries = new Map.Entry[hashMap.size()];
+		// Convert the mapArr of the HashMap into an array
+		Map.Entry<String, Integer>[] mapArr = new Map.Entry[hashMap.size()];
 		int index = 0;
 		for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
-			entries[index++] = entry;
+			mapArr[index++] = entry;
 		}
 
-		// Perform bubble sort on the entries based on values
-		for (int i = 0; i < entries.length; i++) {
-			for (int j = i + 1; j < entries.length; j++) {
-				if (entries[i].getValue() > entries[j].getValue()) {
-					// Swap entries
-					Map.Entry<String, Integer> temp = entries[i];
-					entries[i] = entries[j];
-					entries[j] = temp;
+		// Perform bubble sort on the mapArr based on values
+		for (int i = 0; i < mapArr.length; i++) {
+			for (int j = i + 1; j < mapArr.length; j++) {
+				if (mapArr[i].getValue() > mapArr[j].getValue()) {
+					// Swap mapArr
+					Map.Entry<String, Integer> temp = mapArr[i];
+					mapArr[i] = mapArr[j];
+					mapArr[j] = temp;
 				}
 			}
 		}
 
-		// Create a new LinkedHashMap to store the sorted entries
+		// Create a new LinkedHashMap to store the sorted mapArr
 		LinkedHashMap<String, Integer> sortedHashMap = new LinkedHashMap<>();
 
-		// Put the sorted entries into the LinkedHashMap
-		for (Map.Entry<String, Integer> entry : entries) {
+		// Put the sorted mapArr into the LinkedHashMap
+		for (Map.Entry<String, Integer> entry : mapArr) {
 			sortedHashMap.put(entry.getKey(), entry.getValue());
 		}
 

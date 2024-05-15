@@ -27,20 +27,18 @@ public class FilteringCharsFromString {
 		for (char element : countMap.keySet()) {
 			int count = countMap.get(element);
 
-			if (count > 1) {
-				duplicateList.add(element);
-			} else if (count == 1) {
+			if (count == 1) {
 				nonRepeatingList.add(element);
+			} else if (count > 1) {
+				duplicateList.add(element);
 			}
-			if (count >= 1) {
-				uniqueList.add(element);
-			}
+			uniqueList.add(element);
 		}
 
 		System.out.println("countMap Pairs: " + countMap);
 		System.out.println("Duplicate List: " + duplicateList);
 		System.out.println("Non-Repeating List: " + nonRepeatingList);
 		System.out.println("Unique List: " + uniqueList);
-		
+
 	}
 }
