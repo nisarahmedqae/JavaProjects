@@ -17,7 +17,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
 public class DataDrivenTest {
-
 	WebDriver driver;
 	XSSFWorkbook workbook;
 	DataFormatter formatter = new DataFormatter();
@@ -53,6 +52,7 @@ public class DataDrivenTest {
 	@DataProvider(name = "LoginData")
 	public Object[][] getData() throws IOException {
 		FileInputStream fis = new FileInputStream("..\\ExcelDataDriven\\src\\test\\java\\resources\\loginData.xlsx");
+		System.out.println(fis);
 		workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheet("Sheet1");
 
