@@ -66,10 +66,8 @@ public class BaseTest {
 
 		// string to hashMap- Jackson Databind
 		ObjectMapper mapper = new ObjectMapper();
-		List<HashMap<String, String>> data = mapper.readValue(jsonContent,
-				new TypeReference<List<HashMap<String, String>>>() {
-				});
-		return data;
+		return mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
+		});
 	}
 
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
@@ -77,7 +75,7 @@ public class BaseTest {
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
 		FileUtils.copyFile(source, file);
-		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+		return file.getAbsolutePath();
 	}
 
 	@BeforeMethod(alwaysRun = true)

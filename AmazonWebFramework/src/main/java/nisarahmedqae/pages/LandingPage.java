@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import nisarahmedqae.commonPages.NavigationBar;
 
-public class LandingPage extends NavigationBar{
+public class LandingPage extends NavigationBar {
 
 	WebDriver driver;
 
@@ -19,10 +19,10 @@ public class LandingPage extends NavigationBar{
 	}
 
 	@FindBy(id = "ap_email")
-	WebElement email;
+	private WebElement email;
 
 	@FindBy(id = "ap_password")
-	WebElement password;
+	private WebElement password;
 
 	public LandingPage signInApplication(String inputEmail, String inputPassword) {
 		moveToElement(signInEle);
@@ -35,10 +35,10 @@ public class LandingPage extends NavigationBar{
 
 		return this;
 	}
-	
+
 	public String getErrorMessage() {
-        // Implement error message retrieval logic
-        return "";
-    }
-	
+		// Implement error message retrieval logic
+		return "";
+	}
+
 }
