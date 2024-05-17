@@ -1,5 +1,6 @@
 package nisarahmedqae.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,6 +17,23 @@ public class LandingPage extends NavigationBar{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	moveToElement();
+
+	@FindBy(id = "ap_email")
+	WebElement email;
+
+	@FindBy(id = "ap_password")
+	WebElement password;
+
+	public LandingPage signInApplication(String inputEmail, String inputPassword) {
+		moveToElement(signInEle);
+
+		email.sendKeys(inputEmail);
+		email.sendKeys(Keys.ENTER);
+
+		password.sendKeys(inputPassword);
+		password.sendKeys(Keys.ENTER);
+
+		return new LandingPage(driver);
+	}
 	
 }

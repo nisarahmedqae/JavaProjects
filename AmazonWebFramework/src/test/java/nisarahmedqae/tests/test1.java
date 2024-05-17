@@ -1,13 +1,22 @@
 package nisarahmedqae.tests;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.File;
+import java.io.IOException;
 
-public class test1 {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
-		System.out.println(new File("..\\AmazonWebFramework\\src\\test\\java\\test1.java"));
-		
+import nisarahmedqae.testComponents.BaseTest;
+import nisarahmedqae.testComponents.Retry;
 
+public class test1 extends BaseTest {
+
+	@Test(groups = { "ErrorHandling" }, retryAnalyzer = Retry.class)
+	public void LoginErrorValidation() throws IOException, InterruptedException {
+		// login to application
+		landingPage.signInApplication("demo.testfire@gmail.com", "wrongPassword");
+		//assertEquals(landingPage.getErrorMessage(), "Incorrect email or password.");
 	}
 
 }

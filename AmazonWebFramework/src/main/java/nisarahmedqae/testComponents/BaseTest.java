@@ -79,14 +79,12 @@ public class BaseTest {
 		FileUtils.copyFile(source, file);
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
 	}
-
+	
 	@BeforeMethod(alwaysRun = true)
 	public LandingPage launchApplication() throws IOException {
 		driver = initializeDriver();
-
+		driver.get("https://amazon.in");
 		landingPage = new LandingPage(driver);
-
-		landingPage.goToUrl();
 		return landingPage;
 	}
 
