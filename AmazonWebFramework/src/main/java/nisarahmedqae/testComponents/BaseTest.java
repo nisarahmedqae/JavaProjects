@@ -28,8 +28,8 @@ import nisarahmedqae.pages.LandingPage;
 
 public class BaseTest {
 
-	public WebDriver driver;
-	public LandingPage landingPage;
+	protected WebDriver driver;
+	protected LandingPage landingPage;
 
 	public WebDriver initializeDriver() throws IOException {
 
@@ -47,13 +47,13 @@ public class BaseTest {
 				options.addArguments("headless");
 			}
 			driver = new ChromeDriver(options);
-			driver.manage().window().setSize(new Dimension(1440, 900));
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
 		}
 
+		driver.manage().window().setSize(new Dimension(1440, 900));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 
@@ -79,7 +79,7 @@ public class BaseTest {
 		FileUtils.copyFile(source, file);
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
 	}
-	
+
 	@BeforeMethod(alwaysRun = true)
 	public LandingPage launchApplication() throws IOException {
 		driver = initializeDriver();
@@ -90,7 +90,9 @@ public class BaseTest {
 
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
-		driver.close();
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 
 }

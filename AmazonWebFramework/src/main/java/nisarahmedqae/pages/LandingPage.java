@@ -33,7 +33,12 @@ public class LandingPage extends NavigationBar{
 		password.sendKeys(inputPassword);
 		password.sendKeys(Keys.ENTER);
 
-		return new LandingPage(driver);
+		return this;
 	}
+	
+	public String getErrorMessage() {
+        // Implement error message retrieval logic
+        return "";
+    }
 	
 }

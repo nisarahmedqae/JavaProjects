@@ -8,20 +8,19 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NavigationBar {
 
-	WebDriver driver;
-	Actions actions = new Actions(driver);
+    protected WebDriver driver;
+    protected Actions actions;
 
-	public NavigationBar(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
+    public NavigationBar(WebDriver driver) {
+        this.driver = driver;
+        this.actions = new Actions(driver);
+        PageFactory.initElements(driver, this);
+    }
 
-	@FindBy(id = "nav-link-accountList")
-	public WebElement signInEle;
+    @FindBy(id = "nav-link-accountList")
+    public WebElement signInEle;
 
-	public Actions moveToElement(WebElement element) {
-		actions.moveToElement(element).click().perform();
-		return actions;
-	}
-
+    public void moveToElement(WebElement element) {
+        actions.moveToElement(element).click().perform();
+    }
 }
