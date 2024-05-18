@@ -1,5 +1,8 @@
 package nisarahmedqae.commonPages;
 
+import java.util.List;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -20,7 +23,23 @@ public class NavigationBar {
 	@FindBy(id = "nav-link-accountList")
 	public WebElement signInEle;
 
+	@FindBy(id = "twotabsearchtextbox")
+	public WebElement searchBar;
+
+	@FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']//h2//a//span")
+	public List<WebElement> products;
+
 	public void moveToElement(WebElement element) {
 		actions.moveToElement(element).click().perform();
+	}
+
+	public void searchProduct(String searchKey) {
+		searchBar.click();
+		searchBar.sendKeys(searchKey);
+		searchBar.sendKeys(Keys.ENTER);
+	}
+
+	public List<WebElement> getProductList() {
+		return products;
 	}
 }

@@ -24,6 +24,12 @@ public class LandingPage extends NavigationBar {
 	@FindBy(id = "ap_password")
 	private WebElement password;
 
+	@FindBy(xpath = "//div[@class='a-alert-content']//span[@class='a-list-item']")
+	private WebElement invalidPass;
+
+	@FindBy(xpath = "//span[contains(text(),'email address')]")
+	private WebElement invalidMail;
+
 	public LandingPage signInApplication(String inputEmail, String inputPassword) {
 		moveToElement(signInEle);
 
@@ -36,9 +42,20 @@ public class LandingPage extends NavigationBar {
 		return this;
 	}
 
-	public String getErrorMessage() {
-		// Implement error message retrieval logic
-		return "";
+	public String getPassErrorMessage() {
+		return invalidPass.getText();
+	}
+
+	public String getMailErrorMessage() {
+		return invalidMail.getText();
+	}
+
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
+
+	public NavigationBar goToNavigationBarPage() {
+		return new NavigationBar(driver);
 	}
 
 }
