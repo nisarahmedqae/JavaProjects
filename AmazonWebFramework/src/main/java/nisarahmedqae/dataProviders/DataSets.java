@@ -15,5 +15,11 @@ public class DataSets extends BaseTest {
 		List<HashMap<String, String>> data = getJsonDataToMap("..\\AmazonWebFramework\\testData\\login.json");
 		return new Object[][] { { data.get(0) }, { data.get(1) }, { data.get(2) } };
 	}
+	
+	@DataProvider(name = "getProductsData")
+	public Object[][] getProductsData() throws IOException {
+		List<HashMap<String, String>> data = getJsonDataToMap("..\\AmazonWebFramework\\testData\\products.json");
+		return new Object[][] { { data.get(0) }, { data.get(1) }, { data.get(2) } };
+	}
 
 }

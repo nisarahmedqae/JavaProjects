@@ -7,10 +7,12 @@ import org.testng.annotations.Test;
 
 import nisarahmedqae.dataProviders.DataSets;
 import nisarahmedqae.testComponents.BaseTest;
+import nisarahmedqae.testComponents.Retry;
 
 public class LoginTest extends BaseTest {
 
-	@Test(groups = { "Regression" }, dataProvider = "getLoginData", dataProviderClass = DataSets.class)
+	@Test(groups = {
+			"Regression" }, dataProvider = "getLoginData", dataProviderClass = DataSets.class, retryAnalyzer = Retry.class)
 	public void LoginValidation(HashMap<String, String> input) {
 		// login to application
 		landingPage.signInApplication(input.get("email"), input.get("password"));

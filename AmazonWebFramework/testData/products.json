@@ -1,13 +1,13 @@
 [ {
-  "email" : "wrongEmail@fake.com",
-  "password" : "Testpass@123",
-  "dataSetInfo" : "invalid email"
+  "searchedProduct" : "xiaomi 14",
+  "productName" : "Xiaomi 14 (White, 12GB RAM, 512GB Storage)",
+  "price" : "69,999"
 }, {
-  "email" : "nisarahmed.qae@gmail.com",
-  "password" : "wrongPassword",
-  "dataSetInfo" : "invalid password"
+  "searchedProduct" : "oneplus 12",
+  "productName" : "OnePlus 12 (Flowy Emerald, 12GB RAM, 256GB Storage)",
+  "price" : "64,999"
 }, {
-  "email" : "nisarahmed.qae@gmail.com",
-  "password" : "Testpass@123",
-  "dataSetInfo" : "valid credentials"
+  "searchedProduct" : "iphone 15 pro max",
+  "productName" : "Apple iPhone 15 Pro Max (256 GB) - White Titanium",
+  "price" : "1,48,900"
 } ]

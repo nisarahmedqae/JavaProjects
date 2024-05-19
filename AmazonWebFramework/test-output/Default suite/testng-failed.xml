@@ -5,8 +5,8 @@
     <classes>
       <class name="nisarahmedqae.tests.ProductDetailsTest">
         <methods>
-          <include name="SearchProducts"/>
           <include name="launchApplication"/>
+          <include name="GetProductPrice" invocation-numbers="1"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- nisarahmedqae.tests.ProductDetailsTest -->
