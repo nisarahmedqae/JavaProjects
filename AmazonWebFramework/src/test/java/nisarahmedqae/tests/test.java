@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ScrollingTest {
+public class test {
 
 	// scrollTo sets the absolute position of the window scroll.
 	// scrollBy scrolls the window by a specified amount relative to its current
