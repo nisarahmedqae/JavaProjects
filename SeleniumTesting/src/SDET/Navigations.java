@@ -1,7 +1,6 @@
 package SDET;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
