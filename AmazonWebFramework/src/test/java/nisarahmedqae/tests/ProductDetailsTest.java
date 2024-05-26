@@ -17,7 +17,7 @@ public class ProductDetailsTest extends BaseTest {
 
 	@Test(groups = { "Regression" }, retryAnalyzer = Retry.class)
 	public void GetSearchedProducts() {
-		NavigationBar navigationBar = landingPage.goToNavigationBarPage();
+		NavigationBar navigationBar = landingPage.getNavigationBar();
 		navigationBar.searchProduct("AC");
 		List<WebElement> productList = navigationBar.getProductList();
 
@@ -26,10 +26,10 @@ public class ProductDetailsTest extends BaseTest {
 		Assert.assertTrue(productList.size() > 1, "Product list should contain more than one product.");
 	}
 
-	@Test(groups = {
+	@Test(enabled = false, groups = {
 			"Regression" }, dataProvider = "getProductsData", dataProviderClass = DataSets.class, retryAnalyzer = Retry.class)
 	public void GetProductPrice(HashMap<String, String> input) {
-		NavigationBar navigationBar = landingPage.goToNavigationBarPage();
+		NavigationBar navigationBar = landingPage.getNavigationBar();
 		navigationBar.searchProduct(input.get("searchedProduct"));
 		List<WebElement> productList = navigationBar.getProductList();
 

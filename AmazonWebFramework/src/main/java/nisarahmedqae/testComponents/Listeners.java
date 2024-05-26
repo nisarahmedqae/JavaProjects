@@ -12,7 +12,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class Listeners extends BaseTest implements ITestListener {
-	WebDriver driver = null;
 	private ExtentReports extent = ExtentReporterNG.getReportObject();
 	private ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>(); // Thread safe
 
@@ -33,9 +32,10 @@ public class Listeners extends BaseTest implements ITestListener {
 		extentTest.get().fail(result.getThrowable());
 
 		try {
+			//driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 			driver = getDriver();
-		} catch (Exception e1) {
-			e1.printStackTrace();
+		} catch (IllegalArgumentException | SecurityException e) {
+			e.printStackTrace();
 		}
 
 		String filePath = null;
@@ -44,6 +44,7 @@ public class Listeners extends BaseTest implements ITestListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
 
 	}

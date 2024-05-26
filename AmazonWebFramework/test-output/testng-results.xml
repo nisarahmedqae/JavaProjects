@@ -2,11 +2,10 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-26T13:39:55 IST" name="Suite" finished-at="2024-05-26T13:39:55 IST" duration-ms="0">
+  <suite started-at="2024-05-26T15:20:02 IST" name="Suite" finished-at="2024-05-26T15:20:02 IST" duration-ms="0">
     <groups>
       <group name="Regression">
         <method signature="LoginTest.LoginValidation(java.util.HashMap)[pri:0, instance:nisarahmedqae.tests.LoginTest@2c4d1ac]" name="LoginValidation" class="nisarahmedqae.tests.LoginTest"/>
-        <method signature="ProductDetailsTest.GetProductPrice(java.util.HashMap)[pri:0, instance:nisarahmedqae.tests.ProductDetailsTest@60df60da]" name="GetProductPrice" class="nisarahmedqae.tests.ProductDetailsTest"/>
         <method signature="ProductDetailsTest.GetSearchedProducts()[pri:0, instance:nisarahmedqae.tests.ProductDetailsTest@60df60da]" name="GetSearchedProducts" class="nisarahmedqae.tests.ProductDetailsTest"/>
       </group> <!-- Regression -->
     </groups>
