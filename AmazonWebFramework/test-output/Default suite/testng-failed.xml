@@ -10,6 +10,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- nisarahmedqae.tests.LoginTest -->
+      <class name="nisarahmedqae.tests.ProductDetailsTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="GetProductPrice" invocation-numbers="2 2"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- nisarahmedqae.tests.ProductDetailsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -43,6 +43,7 @@ public class BaseTest {
 
 		if (browserName.contains("chrome")) {
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-notifications");
 			if (browserName.contains("headless")) {
 				options.addArguments("headless");
 			}
@@ -76,6 +77,11 @@ public class BaseTest {
 		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
 		FileUtils.copyFile(source, file);
 		return file.getAbsolutePath();
+	}
+
+	@BeforeMethod(alwaysRun = true)
+	public WebDriver getDriver() {
+		return driver;
 	}
 
 	@BeforeMethod(alwaysRun = true)

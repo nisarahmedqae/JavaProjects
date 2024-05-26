@@ -12,15 +12,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class Listeners extends BaseTest implements ITestListener {
-
-	ExtentTest test;
-	ExtentReports extent = ExtentReporterNG.getReportObject();
-	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); // Thread safe
+	WebDriver driver = null;
+	private ExtentReports extent = ExtentReporterNG.getReportObject();
+	private ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>(); // Thread safe
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		extent.createTest(result.getMethod().getMethodName());
-		extentTest.set(test); // unique thread id(ErrorValidationTest)->test
+		ExtentTest test = extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);
 	}
 
 	@Override
@@ -34,7 +33,7 @@ public class Listeners extends BaseTest implements ITestListener {
 		extentTest.get().fail(result.getThrowable());
 
 		try {
-			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+			driver = getDriver();
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
