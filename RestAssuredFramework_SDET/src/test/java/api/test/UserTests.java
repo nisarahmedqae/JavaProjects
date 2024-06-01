@@ -29,39 +29,39 @@ public class UserTests {
 		userPayload.setEmail(faker.internet().safeEmailAddress());
 		userPayload.setPassword(faker.internet().password(5, 10));
 		userPayload.setPhone(faker.phoneNumber().cellPhone());
-		
-		//logs
-		logger= LogManager.getLogger(this.getClass());
+
+		// logs
+		logger = LogManager.getLogger(this.getClass());
 	}
 
 	@Test(priority = 1)
 	public void testPostUser() {
 		logger.info("*******Creating User*********");
-		
+
 		Response response = UserEndpoints.createUser(userPayload);
 		response.then().log().all();
 
 		Assert.assertEquals(response.getStatusCode(), 200);
-		
+
 		logger.info("*******User is created*********");
 	}
 
 	@Test(priority = 2)
 	public void testGetUserByName() {
 		logger.info("*******Reading User Info*********");
-		
+
 		Response response = UserEndpoints.readUser(this.userPayload.getUsername());
 		response.then().log().all();
 
 		Assert.assertEquals(response.statusCode(), 200);
-		
+
 		logger.info("*******User Info is displayed*********");
 	}
 
 	@Test(priority = 3)
 	public void testUpdateUserByName() {
 		logger.info("*******Updating User*********");
-		
+
 		// update data using payload
 		userPayload.setUsername(faker.name().username());
 		userPayload.setFirstName(faker.name().firstName());
@@ -71,7 +71,7 @@ public class UserTests {
 		response.then().log().all().statusCode(200); // chai assertion
 
 		logger.info("*******User is updated*********");
-		
+
 		// checking data after update
 		testGetUserByName();
 	}
@@ -79,12 +79,12 @@ public class UserTests {
 	@Test(priority = 4)
 	public void testDeleteUserByName() {
 		logger.info("*******Deleting User*********");
-		
+
 		Response response = UserEndpoints.deleteUser(this.userPayload.getUsername());
 		response.then().log().all();
 
 		Assert.assertEquals(response.statusCode(), 200);
-		
+
 		logger.info("*******User Deleted*********");
 	}
 }

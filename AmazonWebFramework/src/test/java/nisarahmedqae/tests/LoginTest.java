@@ -3,11 +3,13 @@ package nisarahmedqae.tests;
 import java.util.HashMap;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import nisarahmedqae.dataProviders.DataSets;
 import nisarahmedqae.testComponents.BaseTest;
 import nisarahmedqae.testComponents.Retry;
+import nisarahmedqae.testComponents.MyListener;
 
 public class LoginTest extends BaseTest {
 

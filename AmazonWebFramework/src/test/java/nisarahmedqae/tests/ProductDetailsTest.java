@@ -6,12 +6,15 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import nisarahmedqae.commonPages.NavigationBar;
 import nisarahmedqae.dataProviders.DataSets;
 import nisarahmedqae.testComponents.BaseTest;
 import nisarahmedqae.testComponents.Retry;
+
+import nisarahmedqae.testComponents.MyListener;
 
 public class ProductDetailsTest extends BaseTest {
 

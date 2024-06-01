@@ -8,7 +8,8 @@
     </groups>
 
     <listeners>
-        <listener class-name="nisarahmedqae.testComponents.Listeners"></listener>
+       <!-- <listener class-name="nisarahmedqae.testComponents.Listeners"></listener>-->
+       <listener class-name="nisarahmedqae.testComponents.MyListener"></listener>
     </listeners>
 
     <test thread-count="5" name="Test">

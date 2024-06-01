@@ -14,7 +14,7 @@ import java.util.Date;
 
 //ExtentReport 5.x
 public class ExtentReportManager implements ITestListener {
-	
+
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
