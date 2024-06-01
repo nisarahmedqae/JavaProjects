@@ -1,6 +1,6 @@
 package POJO_Classes;
 
-public class JsonSerializationData {
+public class ObjectsData {
 
 	private String Name;
 	private int Value;

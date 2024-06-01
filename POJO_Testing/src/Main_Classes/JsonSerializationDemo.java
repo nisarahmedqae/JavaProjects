@@ -2,14 +2,14 @@ package Main_Classes;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import POJO_Classes.JsonSerializationData;
+import POJO_Classes.ObjectsData;
 
 public class JsonSerializationDemo {
 
 	public static void main(String[] args) throws JsonProcessingException {
 
 		// Serialization
-		JsonSerializationData pdata = new JsonSerializationData();
+		ObjectsData pdata = new ObjectsData();
 		pdata.setName("Alan");
 		pdata.setValue(12);
 
@@ -20,7 +20,7 @@ public class JsonSerializationDemo {
 		System.out.println("**************************************");
 
 		// Deserialization
-		JsonSerializationData deserializedData = mapper.readValue(serializedData, JsonSerializationData.class);
+		ObjectsData deserializedData = mapper.readValue(serializedData, ObjectsData.class);
 		System.out.println("Deserialized Data:");
 		System.out.println("Name: " + deserializedData.getName());
 		System.out.println("Value: " + deserializedData.getValue());
