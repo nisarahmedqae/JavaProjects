@@ -1,8 +1,8 @@
-package InterviewQuestions.IntegerBased;
+package StringBased;
 
 import java.util.*;
 
-public class BubbleSortHashMapValues {
+public class BubbleSortHashMapKeys {
 
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
@@ -23,10 +23,10 @@ public class BubbleSortHashMapValues {
 			mapArr[index++] = entry;
 		}
 
-		// Perform bubble sort on the mapArr based on values
+		// Perform bubble sort on the mapArr based on keys
 		for (int i = 0; i < mapArr.length; i++) {
 			for (int j = i + 1; j < mapArr.length; j++) {
-				if (mapArr[i].getValue() > mapArr[j].getValue()) {
+				if (mapArr[i].getKey().compareTo(mapArr[j].getKey()) > 0) {
 					// Swap mapArr
 					Map.Entry<String, Integer> temp = mapArr[i];
 					mapArr[i] = mapArr[j];
@@ -43,6 +43,6 @@ public class BubbleSortHashMapValues {
 			sortedHashMap.put(entry.getKey(), entry.getValue());
 		}
 
-		System.out.println("HashMap after sorting by values: " + sortedHashMap);
+		System.out.println("HashMap after sorting by keys: " + sortedHashMap);
 	}
 }

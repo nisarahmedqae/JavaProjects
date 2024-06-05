@@ -1,4 +1,4 @@
-package InterviewQuestions.IntegerBased;
+package IntegerBased;
 
 public class GenerateIntFromChar {
 

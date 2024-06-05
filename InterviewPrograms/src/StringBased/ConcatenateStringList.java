@@ -1,4 +1,4 @@
-package InterviewQuestions.StringBased;
+package StringBased;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package InterviewQuestions.StringBased;
+package StringBased;
 
 public class ReplaceString {
 

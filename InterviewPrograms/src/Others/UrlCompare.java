@@ -1,4 +1,4 @@
-package InterviewQuestions.Others;
+package Others;
 
 import java.net.InetAddress;
 import java.net.MalformedURLException;
