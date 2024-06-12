@@ -17,7 +17,7 @@ public class FindAlphaNumericStringWithMatches {
         List<String> result = new ArrayList<>();
         for (String element : arr) {
             // Check if the string contains both alphabetic and numeric characters using regex
-            if (element.matches(".*[A-Za-z].*") && element.matches(".*[0-9].*")) {
+            if (element.matches(".*[A-Za-z].*") && element.matches(".*[0-9]+.*")) {
                 result.add(element);
             }
         }

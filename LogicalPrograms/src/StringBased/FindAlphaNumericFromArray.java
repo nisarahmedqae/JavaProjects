@@ -8,17 +8,17 @@ public class FindAlphaNumericFromArray {
 
 		for (String ele : arr) {
 			char[] charArr = ele.toCharArray();
-			boolean hasAlpha = false;
-			boolean hasNumeric = false;
+			boolean hasLetter = false;
+			boolean hasDigit = false;
 
 			for (char ch : charArr) {
 				if (ch >= 'a' && ch <= 'z' || (ch >= 'A' && ch <= 'Z')) {
-					hasAlpha = true;
+					hasLetter = true;
 				} else if (ch >= '0' && ch <= '9') {
-					hasNumeric = true;
+					hasDigit = true;
 				}
 			}
-			if (hasAlpha && hasNumeric) {
+			if (hasLetter && hasDigit) {
 				System.out.println(ele);
 			}
 		}

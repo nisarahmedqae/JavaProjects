@@ -8,8 +8,8 @@ public class ReplaceString {
 
 		String blank = "";
 
-		for (String fetchedName : splittedStr) {
-			String currentName = fetchedName;
+		for (String ele : splittedStr) {
+			String currentName = ele;
 			if (currentName.equals("khan")) {
 				currentName = "ahmed";
 			}
