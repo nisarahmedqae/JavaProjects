@@ -6,21 +6,25 @@ import java.util.Comparator;
 public class SortingArrayFunction {
 
 	public static void main(String[] args) {
-		// Sample primitive int array
 		int[] primitiveArr = { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3 };
 
+		// Sorting Primitive int Array
+		int[] sortedPrimitiveArr = Arrays.stream(primitiveArr).sorted().toArray();
+		System.out.println(Arrays.toString(sortedPrimitiveArr));
+
+		// Sorting Wrapper Integer Array
 		// Convert primitive int array to Integer array using autoboxing
-		Integer[] integerArr = Arrays.stream(primitiveArr).boxed().toArray(Integer[]::new);
+		Integer[] nonPrimitiveArr = Arrays.stream(primitiveArr).boxed().toArray(Integer[]::new);
 
-		// Sort Integer array in ascending order
-		Arrays.sort(integerArr);
-		System.out.println("Ascending order:");
-		System.out.println(Arrays.toString(integerArr));
+		Integer[] sortedNonPrimitiveArr = Arrays.stream(nonPrimitiveArr).sorted(Comparator.reverseOrder())
+				.toArray(Integer[]::new);
+		System.out.println(Arrays.toString(sortedNonPrimitiveArr));
 
-		// Sort Integer array in descending order
-		Arrays.sort(integerArr, Comparator.reverseOrder());
-		System.out.println("Descending order:");
-		System.out.println(Arrays.toString(integerArr));
+		// Sorting String Array
+		String[] stringArr = { "Realme", "Vivo", "Apple", "Samsung", "Xiaomi", "Oppo" };
+
+		String[] sortedStringArr = Arrays.stream(stringArr).sorted().toArray(String[]::new);
+		System.out.println(Arrays.toString(sortedStringArr));
 	}
 
 }
