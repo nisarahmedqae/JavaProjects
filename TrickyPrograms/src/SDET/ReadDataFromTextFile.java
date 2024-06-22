@@ -31,13 +31,7 @@ public class ReadDataFromTextFile {
 		while (scanner.hasNextLine()) {
 			System.out.println(scanner.nextLine());
 		}
-
-		// Approach 3
-		File file2 = new File(systemPath + "\\src\\SDET\\DataFile.txt");
-		Scanner scanner2 = new Scanner(file2);
-
-		scanner2.useDelimiter("\\Z");
-		System.out.println(scanner2.next());
+		
 	}
 
 }
