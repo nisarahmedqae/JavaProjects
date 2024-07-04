@@ -35,14 +35,14 @@ public class BubbleSortHashMapKeys {
 			}
 		}
 
-		// Create a new LinkedHashMap to store the sorted mapArr
-		LinkedHashMap<String, Integer> sortedHashMap = new LinkedHashMap<>();
+		// Create a new LinkedHashMap to store the sorted mapArr in order
+		LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
 
 		// Put the sorted mapArr into the LinkedHashMap
 		for (Map.Entry<String, Integer> entry : mapArr) {
-			sortedHashMap.put(entry.getKey(), entry.getValue());
+			linkedHashMap.put(entry.getKey(), entry.getValue());
 		}
 
-		System.out.println("HashMap after sorting by keys: " + sortedHashMap);
+		System.out.println("HashMap after sorting by keys: " + linkedHashMap);
 	}
 }

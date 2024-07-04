@@ -6,18 +6,18 @@ public class ConcatenateIntArrays {
 
 	public static void main(String[] args) {
 
-		int[] intArray1 = { 1, 2 };
-		int[] intArray2 = { 3, 4 };
+		int[] arr1 = { 1, 2 };
+		int[] arr2 = { 3, 4 };
 
-		int arrLength = intArray1.length + intArray2.length;
+		int arrLength = arr1.length + arr2.length;
 		int[] concatenatedIntArray = new int[arrLength];
 
 		int index = 0;
-		for (int element : intArray1) {
+		for (int element : arr1) {
 			concatenatedIntArray[index++] = element;
 		}
 
-		for (int element : intArray2) {
+		for (int element : arr2) {
 			concatenatedIntArray[index++] = element;
 		}
 

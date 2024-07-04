@@ -1,6 +1,6 @@
 package StringBased;
 
-public class FindDiffStrWithMatches {
+public class AlphaNumStringCounterWithMatches {
 
 	public static void main(String[] args) {
 		String[] arr = { "hello", "World", "23alpha", "10", "hel22", "arm" };

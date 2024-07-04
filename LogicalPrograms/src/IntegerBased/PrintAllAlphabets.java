@@ -1,4 +1,4 @@
-package StringBased;
+package IntegerBased;
 
 public class PrintAllAlphabets {
 
