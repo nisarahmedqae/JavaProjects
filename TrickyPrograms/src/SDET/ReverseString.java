@@ -5,8 +5,8 @@ public class ReverseString {
 	public static void main(String[] args) {
 		// Reverse a String
 
-		// Approach 2
-		String str = "ABCD";
+		// Approach 1
+		String str = "madam";
 		String temp = "";
 
 		char[] ch = str.toCharArray();
@@ -16,8 +16,12 @@ public class ReverseString {
 		}
 		System.out.println(temp);
 
+		if (str.equals(temp)) {
+			System.out.println("String is Palindrome");
+		}
+
 		// Approach 2
-		String str2 = "ABCD";
+		String str2 = "madam";
 		StringBuffer sb = new StringBuffer(str2);
 		StringBuffer revSb = sb.reverse();
 		System.out.println(revSb);
