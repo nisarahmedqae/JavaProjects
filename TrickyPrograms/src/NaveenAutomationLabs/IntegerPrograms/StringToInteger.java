@@ -6,16 +6,14 @@ public class StringToInteger {
 
 	public static int stringToInt(String str) {
 		char[] ch = str.toCharArray();
-		int num = 0;
-		int zeroAsc = (int) '0'; // This line calculates the ASCII value of the character '0'/zero i.e 48
-		
-		for (int i = 0; i < ch.length; i++) {
-			int asc = (int) ch[i];
-			num = num * 10 + (asc - zeroAsc);
-		}
-		return num;
-	}
+		int result = 0;
 
+		for (int i = 0; i < ch.length; i++) {
+			int asc = ch[i] - '0'; // ASCII value of the character '0'/zero i.e 48
+			result = result * 10 + asc;
+		}
+		return result;
+	}
 
 	public static void main(String[] args) {
 		String s = "123";
