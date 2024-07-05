@@ -37,8 +37,8 @@ public class DiagonalSum2DArray {
 		long sum = 0;
 
 		for (int i = 0; i < numArr.length; i++) {
-			int col = numArr.length - 1 - i;
-			sum += numArr[i][col];
+			int col = numArr[0].length;
+			sum += numArr[i][col - 1 - i];
 		}
 
 		return sum;
