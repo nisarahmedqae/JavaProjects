@@ -12,18 +12,18 @@ public class DownloadFilesInChrome {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		HashMap<String, Object> map = new HashMap<>();
+		HashMap<String, Object> hashMap = new HashMap<>();
 		// change default download location
-		map.put("download.default_directory", "C:\\SeleniumDownloadedFiles");
+		hashMap.put("download.default_directory", "C:\\SeleniumDownloadedFiles");
 
 		// Turn off ask everytime to save each file before downloading
-		map.put("download.prompt_for_download", false);
+		hashMap.put("download.prompt_for_download", false);
 
 		// download pdf files instead of opening it
-		map.put("plugins.always_open_pdf_externally", true);
+		hashMap.put("plugins.always_open_pdf_externally", true);
 
 		ChromeOptions options = new ChromeOptions();
-		options.setExperimentalOption("prefs", map);
+		options.setExperimentalOption("prefs", hashMap);
 
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
