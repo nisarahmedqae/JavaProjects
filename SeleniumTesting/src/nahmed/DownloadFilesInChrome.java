@@ -13,6 +13,7 @@ public class DownloadFilesInChrome {
 	public static void main(String[] args) throws InterruptedException {
 
 		HashMap<String, Object> hashMap = new HashMap<>();
+		
 		// change default download location
 		hashMap.put("download.default_directory", "C:\\SeleniumDownloadedFiles");
 
