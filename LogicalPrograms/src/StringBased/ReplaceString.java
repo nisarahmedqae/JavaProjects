@@ -9,11 +9,10 @@ public class ReplaceString {
 		String blank = "";
 
 		for (String ele : splittedStr) {
-			String currentName = ele;
-			if (currentName.equals("khan")) {
-				currentName = "ahmed";
+			if (ele.equals("khan")) {
+				ele = "ahmed";
 			}
-			blank = blank + currentName + " ";
+			blank = blank + ele + " ";
 		}
 
 		System.out.println(blank);

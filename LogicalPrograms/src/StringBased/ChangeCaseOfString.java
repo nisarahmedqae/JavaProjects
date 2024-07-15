@@ -14,9 +14,9 @@ public class ChangeCaseOfString {
 		for (int i = 0; i < charArr.length; i++) {
 			char ch = charArr[i];
 
-			if (i % 2 == 0 && ch >= 'a' && ch <= 'z') {
+			if (i % 2 == 0 && (ch >= 'a' && ch <= 'z')) {
 				ch = (char) (ch - 32);
-			} else if (i % 2 != 0 && ch >= 'A' && ch <= 'Z') {
+			} else if (i % 2 != 0 && (ch >= 'A' && ch <= 'Z')) {
 				ch = (char) (ch + 32);
 			}
 

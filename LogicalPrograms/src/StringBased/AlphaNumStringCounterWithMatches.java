@@ -8,13 +8,14 @@ public class AlphaNumStringCounterWithMatches {
 		int strCount = 0;
 		int intCount = 0;
 		int alphaNumericCount = 0;
-
+		// .* will check regardless of other things in the string
+		
 		for (String ele : arr) {
 			if (ele.matches(".*[A-Za-z].*") && ele.matches(".*[0-9]+.*")) {
 				alphaNumericCount++;
 			} else if (ele.matches(".*[A-Za-z].*")) {
 				strCount++;
-			} else if (ele.matches("[0-9]+")) {
+			} else if (ele.matches(".*[0-9]+.*")) {
 				intCount++;
 			}
 		}

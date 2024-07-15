@@ -7,7 +7,8 @@ public class ReverseDigits {
 		char[] digitsArr = String.valueOf(digits).toCharArray();
 
 		for (int i = digitsArr.length - 1; i >= 0; i--) {
-			System.out.print(digitsArr[i]);
+			int digit = digitsArr[i] - '0'; // converting char to int
+			System.out.print(digit);
 		}
 
 	}

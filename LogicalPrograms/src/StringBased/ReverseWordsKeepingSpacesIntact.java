@@ -1,6 +1,6 @@
 package StringBased;
 
-public class WordReversalWithSpaces {
+public class ReverseWordsKeepingSpacesIntact {
 
 	public static void main(String[] args) {
 

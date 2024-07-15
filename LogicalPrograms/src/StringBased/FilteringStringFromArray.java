@@ -9,23 +9,23 @@ public class FilteringStringFromArray {
 
 		String[] arr = { "nisar", "riyaz", "nisar", "kayenat", "riyaz", "nisar", "fatma" };
 
-		HashMap<String, Integer> countMap = new HashMap<>();
+		HashMap<String, Integer> hashMap = new HashMap<>();
 		ArrayList<String> duplicateList = new ArrayList<>();
 		ArrayList<String> nonRepeatingList = new ArrayList<>();
 		ArrayList<String> uniqueList = new ArrayList<>();
 
 		// Count occurrences of each element
 		for (String element : arr) {
-			if (countMap.get(element) == null) {
-				countMap.put(element, 1);
+			if (hashMap.get(element) == null) {
+				hashMap.put(element, 1);
 			} else {
-				countMap.put(element, countMap.get(element) + 1);
+				hashMap.put(element, hashMap.get(element) + 1);
 			}
 		}
 
 		// Categorize elements based on occurrence count
-		for (String element : countMap.keySet()) {
-			int count = countMap.get(element);
+		for (String element : hashMap.keySet()) {
+			int count = hashMap.get(element);
 
 			if (count == 1) {
 				nonRepeatingList.add(element);
@@ -35,7 +35,7 @@ public class FilteringStringFromArray {
 			uniqueList.add(element);
 		}
 
-		System.out.println("countMap Pairs: " + countMap);
+		System.out.println("hashMap Pairs: " + hashMap);
 		System.out.println("Duplicate List: " + duplicateList);
 		System.out.println("Non-Repeating List: " + nonRepeatingList);
 		System.out.println("Unique List: " + uniqueList);

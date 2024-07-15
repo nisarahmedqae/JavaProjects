@@ -16,7 +16,7 @@ public class BubbleSortHashMapValues {
 
 		System.out.println("HashMap before sorting: " + hashMap);
 
-		// Convert the mapArr of the HashMap into an array
+		// Convert the HashMap into an array
 		Map.Entry<String, Integer>[] mapArr = new Map.Entry[hashMap.size()];
 		int index = 0;
 		for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
