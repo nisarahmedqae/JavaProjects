@@ -8,12 +8,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class MobileBrowserTest extends BrowserBaseTest {
+public class MobileBrowserTest extends Base {
 
 	@Test
 	public void browserTest() {
 		driver.get("https://www.google.com/");
-		System.out.println(driver.getTitle());
+		System.out.println("Browser Title fetched: " + driver.getTitle());
 		driver.findElement(By.name("q")).sendKeys("rahul shetty academy");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 	}
