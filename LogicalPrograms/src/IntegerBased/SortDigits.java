@@ -1,34 +1,32 @@
 package IntegerBased;
 
-import java.util.Arrays;
-
 public class SortDigits {
 
 	public static void main(String[] args) {
 		long num = -3216549870L;
-		long positiveNum = -num;
+		long positiveNum = -num; // Convert to positive
 		char[] charArr = String.valueOf(positiveNum).toCharArray();
-		int[] arr = new int[charArr.length];
 
-		int index = 0;
-		for (char ch : charArr) {
-			int digit = ch - '0';
-			arr[index++] = digit;
-		}
+		System.out.println("Num before sorting: " + Long.parseLong(new String(charArr)));
 
-		System.out.println("Arrays before sorting: " + Arrays.toString(charArr));
+		// Implementing the bubble sort algorithm to sort the charArr array
+		for (int i = 0; i < charArr.length; i++) {
+			for (int j = i + 1; j < charArr.length; j++) {
 
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = i + 1; j < arr.length; j++) {
-				if (arr[i] > arr[j]) {
-					int temp = arr[i];
-					arr[i] = arr[j];
-					arr[j] = temp;
+				// Convert characters to integers for comparison
+				int digit1 = charArr[i] - '0';
+				int digit2 = charArr[j] - '0';
+
+				// Swap if the current digit is greater than the next digit
+				if (digit1 > digit2) {
+					char temp = charArr[i];
+					charArr[i] = charArr[j];
+					charArr[j] = temp;
 				}
 			}
 		}
 
-		System.out.println("Arrays after sorting: " + Arrays.toString(arr));
-	}
+		System.out.println("Num after sorting: " + Long.parseLong(new String(charArr)));
 
+	}
 }
