@@ -17,7 +17,7 @@ public class ReverseWordsKeepingSpacesIntact {
 		int j = result.length - 1;
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] != ' ') {
-				if (result[j] == ' ') {
+				while (result[j] == ' ') {
 					j--;
 				}
 				result[j] = arr[i];
