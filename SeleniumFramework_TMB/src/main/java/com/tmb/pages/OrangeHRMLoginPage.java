@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import com.tmb.driver.DriverManager;
 
-public final class OrangeHRMLoginPage {
+public final class OrangeHRMLoginPage extends BasePage {
 	// All your page methods needs to have some return type
 
 	private final By textboxUsername = By.xpath("//input[@placeholder='Username']");
@@ -12,22 +12,22 @@ public final class OrangeHRMLoginPage {
 	private final By buttonLogin = By.xpath("//button[@type='submit']");
 
 	public OrangeHRMLoginPage enterUserName(String username) {
-		DriverManager.getDriver().findElement(textboxUsername).sendKeys(username);
+		sendKeys(textboxUsername, username, "present");
 		return this;
 	}
 
 	public OrangeHRMLoginPage enterPassword(String password) {
-		DriverManager.getDriver().findElement(textboxPassword).sendKeys(password);
+		sendKeys(textboxPassword, password, "present");
 		return this;
 	}
 
 	public OrangeHRMHomePage clickLogin() {
-		DriverManager.getDriver().findElement(buttonLogin).click();
+		click(buttonLogin, "clickable");
 		return new OrangeHRMHomePage();
 	}
 
-	public String getTitle() {
-		return DriverManager.getDriver().getTitle();
+	public String getPageTitle() {
+		return getTitle();
 	}
 
 }

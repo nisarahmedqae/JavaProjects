@@ -17,7 +17,7 @@ public final class OrangeHRMTests extends BaseTest {
 	public void loginLogoutTest() {
 		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String title = new OrangeHRMLoginPage().enterUserName("Admin").enterPassword("admin123").clickLogin()
-				.clickWelcome().clickLogout().getTitle();
+				.clickWelcome().clickLogout().getPageTitle();
 		
 		Assertions.assertThat(title)
 		.isEqualTo("OrangeHRM");
