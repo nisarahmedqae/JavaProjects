@@ -7,7 +7,6 @@ import static org.assertj.core.api.Assertions.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tmb.driver.DriverManager;
@@ -16,6 +15,7 @@ public final class HomePageTests extends BaseTest {
 	private HomePageTests() {
 
 	}
+	
 	/*
 	 * validate whether title containing "google search"
 	 * validate whether title is not null and the length of title greater than 15 and less than 100

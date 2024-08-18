@@ -25,7 +25,7 @@ public final class ReadPropertyFile {
 			prop.load(fis);
 
 			for (Map.Entry<Object, Object> entry : prop.entrySet()) {
-				CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()));
+				CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim()); //remove the trailing and leading spaces
 			}
 
 			//prop.entrySet().forEach(entry -> CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue())));
