@@ -1,9 +1,9 @@
 package com.tmb.tests;
 
-import java.time.Duration;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -25,9 +25,7 @@ public final class HomePageTests extends BaseTest {
 
 	@Test
 	public void test2() throws InterruptedException {
-		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		DriverManager.getDriver().findElement(By.name("q")).sendKeys("Testing Mini Bytes YouTube", Keys.ENTER);
-		Thread.sleep(5);
 		String title = DriverManager.getDriver().getTitle();
 		System.out.println(title);
 		System.out.println(title.length());
