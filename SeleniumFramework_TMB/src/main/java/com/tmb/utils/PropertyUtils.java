@@ -9,10 +9,11 @@ import java.util.Objects;
 import java.util.Properties;
 
 import com.tmb.constants.FrameworkConstants;
+import com.tmb.enums.ConfigProperties;
 
-public final class ReadPropertyFile {
+public final class PropertyUtils {
 
-	private ReadPropertyFile() {
+	private PropertyUtils() {
 
 	}
 
@@ -36,11 +37,11 @@ public final class ReadPropertyFile {
 		}
 	}
 
-	public static String getValue(String key) throws Exception {
+	public static String getValue(ConfigProperties key) throws Exception {
 		if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key))) {
 			throw new Exception("Property name" + key + " is not found. Please check config.properties");
 		}
-		return CONFIGMAP.get(key);
+		return CONFIGMAP.get(key.name().toLowerCase());
 	}
 
 	public static String getDirectValue(String key) throws Exception {

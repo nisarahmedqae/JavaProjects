@@ -1,12 +1,12 @@
 package com.tmb.driver;
 
-import java.io.IOException;
 import java.util.Objects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.tmb.utils.ReadPropertyFile;
+import com.tmb.enums.ConfigProperties;
+import com.tmb.utils.PropertyUtils;
 
 public final class Driver {
 
@@ -19,7 +19,7 @@ public final class Driver {
 			WebDriver driver = new ChromeDriver(); // ctrl+shift+o
 
 			DriverManager.setDriver(driver);
-			DriverManager.getDriver().get(ReadPropertyFile.getValue("url"));
+			DriverManager.getDriver().get(PropertyUtils.getValue(ConfigProperties.URL));
 		}
 	}
 
