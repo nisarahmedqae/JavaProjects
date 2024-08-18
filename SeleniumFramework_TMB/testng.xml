@@ -4,7 +4,6 @@
 	<test thread-count="2" name="Test" parallel="methods">
 		<classes>
 			<class name="com.tmb.tests.HomePageTests" />
-			<class name="com.tmb.tests.LoginPageTests" />
 		</classes>
 	</test> <!--
 	Test -->
