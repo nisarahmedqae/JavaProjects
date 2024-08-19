@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import com.tmb.driver.Driver;
 
 public class BaseTest {
-	
+
 	protected BaseTest() {
 
 	}

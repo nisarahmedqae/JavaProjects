@@ -5,6 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.tmb.pages.OrangeHRMLoginPage;
+import com.tmb.reports.ExtentReport;
 
 public final class OrangeHRMTests extends BaseTest {
 	private OrangeHRMTests() {
@@ -21,8 +22,7 @@ public final class OrangeHRMTests extends BaseTest {
 
 	@DataProvider(name = "LoginTestData", parallel = true)
 	public Object[][] getData() {
-		return new Object[][] { { "Admin", "admin123" }, { "Admin123", "admin1234" }, { "Admin123", "admin1234" },
-				{ "Admin123", "admin1234" } };
+		return new Object[][] { { "Admin", "admin123" }, { "Admin", "admin12" } };
 	}
 
 }
