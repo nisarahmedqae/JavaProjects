@@ -7,6 +7,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.tmb.driver.DriverManager;
 import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtils;
+import com.tmb.utils.ScreenshotUtils;
 
 public final class ExtentLogger {
 
@@ -30,7 +31,7 @@ public final class ExtentLogger {
 		if (PropertyUtils.getValue(ConfigProperties.PASSEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")
 				&& isScreenshotNeeded) {
 			ExtentManager.getExtentTest().pass(message,
-					MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Image()).build());
+					MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtils.getBase64Image()).build());
 		} else {
 			pass(message);
 		}
@@ -40,7 +41,7 @@ public final class ExtentLogger {
 		if (PropertyUtils.getValue(ConfigProperties.FAILEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")
 				&& isScreenshotNeeded) {
 			ExtentManager.getExtentTest().fail(message,
-					MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Image()).build());
+					MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtils.getBase64Image()).build());
 		} else {
 			fail(message);
 		}
@@ -50,14 +51,10 @@ public final class ExtentLogger {
 		if (PropertyUtils.getValue(ConfigProperties.SKIPPEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")
 				&& isScreenshotNeeded) {
 			ExtentManager.getExtentTest().skip(message,
-					MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Image()).build());
+					MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtils.getBase64Image()).build());
 		} else {
 			skip(message);
 		}
-	}
-
-	public static String getBase64Image() {
-		return ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BASE64);
 	}
 
 }

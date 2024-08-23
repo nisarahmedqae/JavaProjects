@@ -12,6 +12,8 @@ public final class FrameworkConstants {
 	private static final String RESOURCESPATH = System.getProperty("user.dir") + "/src/test/resources";
 	private static final String CONFIGFILEPATH = RESOURCESPATH + "/config/config.properties";
 	private static final String EXTENTREPORTFOLDERPATH = System.getProperty("user.dir") + "/extent-test-output";
+	private static final String EXCELPATH = RESOURCESPATH + "/excel/testdata.xlsx";
+
 	private static final int EXPLICITWAIT = 10;
 	private static String extentReportFilePath = "";
 
@@ -30,6 +32,10 @@ public final class FrameworkConstants {
 		}
 	}
 
+	public static String getExcelPath() {
+		return EXCELPATH;
+	}
+	
 	public static int getExplicitWait() {
 		return EXPLICITWAIT;
 	}

@@ -1,6 +1,7 @@
 package com.tmb.listeners;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
@@ -29,14 +30,13 @@ public class ListenersClass implements ITestListener, ISuiteListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		ExtentReport.createTest(result.getMethod().getMethodName());
+		ExtentReport.createTest(result.getMethod().getDescription());
 	}
 
 	@Override
@@ -48,6 +48,8 @@ public class ListenersClass implements ITestListener, ISuiteListener {
 	public void onTestFailure(ITestResult result) {
 		try {
 			ExtentLogger.fail(result.getMethod().getMethodName() + " is failed", true);
+			ExtentLogger.fail(result.getThrowable().toString());
+			ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -59,20 +61,23 @@ public class ListenersClass implements ITestListener, ISuiteListener {
 	}
 
 	@Override
-	public void onFinish(ITestContext arg0) {
-		// TODO Auto-generated method stub
-
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		/*
+		 * For now we are not using this
+		 */
 	}
 
 	@Override
-	public void onStart(ITestContext arg0) {
-		// TODO Auto-generated method stub
-
+	public void onStart(ITestContext context) {
+		/*
+		 * For now we are not using this
+		 */
 	}
 
 	@Override
-	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
-		// TODO Auto-generated method stub
-
+	public void onFinish(ITestContext context) {
+		/*
+		 * For now we are not using this
+		 */
 	}
 }
