@@ -1,65 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-24T15:42:23 IST" name="Suite" finished-at="2024-08-24T15:42:43 IST" duration-ms="19381">
+  <suite started-at="2024-08-24T17:25:50 IST" name="Suite" finished-at="2024-08-24T17:25:59 IST" duration-ms="8976">
     <groups>
     </groups>
-    <test started-at="2024-08-24T15:42:23 IST" name="Test" finished-at="2024-08-24T15:42:43 IST" duration-ms="19381">
-      <class name="com.tmb.tests.OrangeHRMTests">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@121314f7]" started-at="2024-08-24T15:42:24 IST" name="setUp" finished-at="2024-08-24T15:42:36 IST" duration-ms="11897" status="PASS">
+    <test started-at="2024-08-24T17:25:50 IST" name="Test" finished-at="2024-08-24T17:25:59 IST" duration-ms="8976">
+      <class name="com.tmb.tests.AmazonDemoTests">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTests@6d4d66d2]" started-at="2024-08-24T17:25:51 IST" name="setUp" finished-at="2024-08-24T17:25:55 IST" duration-ms="4379" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7bca6fac]]>
+                <![CDATA[[Ljava.lang.Object;@2ab5afc7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@121314f7]" started-at="2024-08-24T15:42:24 IST" name="setUp" finished-at="2024-08-24T15:42:29 IST" duration-ms="4388" status="PASS">
+        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTests@6d4d66d2]" started-at="2024-08-24T17:25:55 IST" name="amazonTest" description="To check whether the amazon test is working or not" data-provider="getData" finished-at="2024-08-24T17:25:57 IST" duration-ms="2035" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@5c60b0a0]]>
+                <![CDATA[{fname=, password=, browser=edge, testname=amazonTest, execute=yes, menutext=Laptops, username=}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (175, 562). Other element would receive the click: <div id="hmenu-content">...</div>
+  (Session info: MicrosoftEdge=127.0.2651.105)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9c824eb0c8191e83705ca0aeb5979b5c, clickElement {id=f.E048E695CB41AD377E0347C7BB84AC73.d.23ABA24F1ACD40EC6D7388D8985D7AC0.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54658}, msedge: {msedgedriverVersion: 127.0.2651.105 (e2354f41f84..., userDataDir: C:\Users\iamni\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54658/devtoo..., se:cdpVersion: 127.0.2651.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9c824eb0c8191e83705ca0aeb5979b5c)] -> xpath: //a[text()='Laptops']]
+Session ID: 9c824eb0c8191e83705ca0aeb5979b5c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (175, 562). Other element would receive the click: <div id="hmenu-content">...</div>
+  (Session info: MicrosoftEdge=127.0.2651.105)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9c824eb0c8191e83705ca0aeb5979b5c, clickElement {id=f.E048E695CB41AD377E0347C7BB84AC73.d.23ABA24F1ACD40EC6D7388D8985D7AC0.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54658}, msedge: {msedgedriverVersion: 127.0.2651.105 (e2354f41f84..., userDataDir: C:\Users\iamni\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54658/devtoo..., se:cdpVersion: 127.0.2651.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9c824eb0c8191e83705ca0aeb5979b5c)] -> xpath: //a[text()='Laptops']]
+Session ID: 9c824eb0c8191e83705ca0aeb5979b5c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.tmb.pages.BasePage.click(BasePage.java:17)
+at com.tmb.pages.AmazonHamburgerMenuPage.clickOnSubMenuItem(AmazonHamburgerMenuPage.java:20)
+at com.tmb.tests.AmazonDemoTests.amazonTest(AmazonDemoTests.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@121314f7]" started-at="2024-08-24T15:42:29 IST" name="loginLogoutTest" description="To check whether the user can successfully login and logout" data-provider="getData" finished-at="2024-08-24T15:42:33 IST" duration-ms="4338" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=amuthan, password=admin123, browser=chrome, testname=loginLogoutTest, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@121314f7]" started-at="2024-08-24T15:42:33 IST" name="tearDown" finished-at="2024-08-24T15:42:33 IST" duration-ms="194" status="PASS">
+        </test-method> <!-- amazonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTests@6d4d66d2]" started-at="2024-08-24T17:25:58 IST" name="tearDown" finished-at="2024-08-24T17:25:59 IST" duration-ms="1378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@121314f7]" started-at="2024-08-24T15:42:36 IST" name="loginLogoutTest" description="To check whether the user can successfully login and logout" data-provider="getData" finished-at="2024-08-24T15:42:42 IST" duration-ms="5391" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=testing mini bytes, password=admin123, browser=edge, testname=loginLogoutTest, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@121314f7]" started-at="2024-08-24T15:42:42 IST" name="tearDown" finished-at="2024-08-24T15:42:43 IST" duration-ms="1320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tmb.tests.OrangeHRMTests -->
+      </class> <!-- com.tmb.tests.AmazonDemoTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
