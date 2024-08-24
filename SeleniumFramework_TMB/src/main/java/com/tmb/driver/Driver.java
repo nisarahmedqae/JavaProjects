@@ -4,6 +4,7 @@ import java.util.Objects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtils;
@@ -14,11 +15,17 @@ public final class Driver {
 
 	}
 
-	public static void initDriver() throws Exception {
+	public static void initDriver(String browser) throws Exception {
 		if (Objects.isNull(DriverManager.getDriver())) {
-			WebDriver driver = new ChromeDriver(); // ctrl+shift+o
 
-			DriverManager.setDriver(driver);
+			if (browser.equalsIgnoreCase("chrome")) {
+				WebDriver driver = new ChromeDriver();
+				DriverManager.setDriver(driver);
+			} else if (browser.equalsIgnoreCase("edge")) {
+				WebDriver driver = new EdgeDriver();
+				DriverManager.setDriver(driver);
+			}
+
 			DriverManager.getDriver().get(PropertyUtils.getValue(ConfigProperties.URL));
 		}
 	}

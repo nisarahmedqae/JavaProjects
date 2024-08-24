@@ -13,7 +13,7 @@ public final class OrangeHRMTests extends BaseTest {
 
 	}
 
-	@Test(dataProvider = "getData", dataProviderClass = DataProviderUtils.class)
+	@Test
 	public void loginLogoutTest(Map<String, String> data) {
 		String title = new OrangeHRMLoginPage().enterUserName(data.get("username")).enterPassword(data.get("password"))
 				.clickLogin().clickWelcome().clickLogout().getPageTitle();
@@ -21,7 +21,7 @@ public final class OrangeHRMTests extends BaseTest {
 		Assertions.assertThat(title).isEqualTo("OrangeHRM");
 	}
 
-	@Test(dataProvider = "getData", dataProviderClass = DataProviderUtils.class)
+	@Test
 	public void newTest(Map<String, String> data) {
 		String title = new OrangeHRMLoginPage().enterUserName(data.get("username")).enterPassword(data.get("password"))
 				.clickLogin().clickWelcome().clickLogout().getPageTitle();
