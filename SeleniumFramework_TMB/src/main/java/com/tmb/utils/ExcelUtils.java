@@ -26,14 +26,13 @@ public final class ExcelUtils {
 
 	static DataFormatter formatter = new DataFormatter();
 
-	public static List<Map<String, String>> getTestDetails() {
+	public static List<Map<String, String>> getTestDetails(String sheetname) {
 		List<Map<String, String>> list = null;
 		FileInputStream fis = null;
 
 		try {
 			fis = new FileInputStream(FrameworkConstants.getExcelPath());
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
-			String sheetname = "RUNMANAGER";
 			XSSFSheet sheet = workbook.getSheet(sheetname);
 
 			int rowCount = sheet.getLastRowNum();
