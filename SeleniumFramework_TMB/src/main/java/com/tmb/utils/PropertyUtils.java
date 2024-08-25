@@ -21,15 +21,16 @@ public final class PropertyUtils {
 	private static final Map<String, String> CONFIGMAP = new HashMap<>();
 
 	static {
-		try {
-			FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigFilePath());
+		try (FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigFilePath())) {
 			prop.load(fis);
 
 			for (Map.Entry<Object, Object> entry : prop.entrySet()) {
-				CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim()); //remove the trailing and leading spaces
+				CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim());
 			}
 
-			//prop.entrySet().forEach(entry -> CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue())));
+			// prop.entrySet().forEach(entry ->
+			// CONFIGMAP.put(String.valueOf(entry.getKey()),
+			// String.valueOf(entry.getValue())));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -22,16 +21,13 @@ public final class ExcelUtils {
 
 	}
 
-	// try with resources
-
 	static DataFormatter formatter = new DataFormatter();
 
 	public static List<Map<String, String>> getTestDetails(String sheetname) {
 		List<Map<String, String>> list = null;
-		FileInputStream fis = null;
 
-		try {
-			fis = new FileInputStream(FrameworkConstants.getExcelPath());
+		try (FileInputStream fis = new FileInputStream(FrameworkConstants.getExcelPath())) {
+
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
 			XSSFSheet sheet = workbook.getSheet(sheetname);
 
@@ -58,14 +54,6 @@ public final class ExcelUtils {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				if (Objects.nonNull(fis)) {
-					fis.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
 		}
 
 		return list;
