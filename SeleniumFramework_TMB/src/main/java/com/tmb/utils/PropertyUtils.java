@@ -10,6 +10,7 @@ import java.util.Properties;
 
 import com.tmb.constants.FrameworkConstants;
 import com.tmb.enums.ConfigProperties;
+import com.tmb.exceptions.PropertyFileUsageException;
 
 public final class PropertyUtils {
 
@@ -38,9 +39,10 @@ public final class PropertyUtils {
 		}
 	}
 
-	public static String getValue(ConfigProperties key) throws Exception {
+	public static String getValue(ConfigProperties key) {
 		if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
-			throw new Exception("Property name" + key + " is not found. Please check config.properties");
+			throw new PropertyFileUsageException(
+					"Property name" + key + " is not found. Please check config.properties");
 		}
 		return CONFIGMAP.get(key.name().toLowerCase());
 	}
