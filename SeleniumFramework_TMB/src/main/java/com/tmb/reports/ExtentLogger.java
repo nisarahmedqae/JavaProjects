@@ -1,10 +1,6 @@
 package com.tmb.reports;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.tmb.driver.DriverManager;
 import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtils;
 import com.tmb.utils.ScreenshotUtils;

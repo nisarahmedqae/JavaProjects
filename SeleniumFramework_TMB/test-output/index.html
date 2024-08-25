@@ -130,15 +130,15 @@
                   </a> <!-- amazonTest({fname=, password=, browser=edge, testname=amazonTest, execute=yes, menutext=Laptops, username=}) -->
                   <span class="method-name">amazonTest</span>
                   <span class="parameters">({fname=, password=, browser=edge, testname=amazonTest, execute=yes, menutext=Laptops, username=})</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/gp/browse.html?node=1375424031&amp;amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt; is not clickable at point (175, 562). Other element would receive the click: &lt;div id=&quot;hmenu-content&quot;&gt;...&lt;/div&gt;
-  (Session info: MicrosoftEdge=127.0.2651.105)
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/gp/browse.html?node=1375424031&amp;amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt; is not clickable at point (175, 562). Other element would receive the click: &lt;a href=&quot;/gp/browse.html?node=2454172031&amp;amp;ref_=nav_em_sbc_mobcomp_office_0_2_8_11&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt;
+  (Session info: MicrosoftEdge=128.0.2739.42)
 Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [9c824eb0c8191e83705ca0aeb5979b5c, clickElement {id=f.E048E695CB41AD377E0347C7BB84AC73.d.23ABA24F1ACD40EC6D7388D8985D7AC0.e.91}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54658}, msedge: {msedgedriverVersion: 127.0.2651.105 (e2354f41f84..., userDataDir: C:\Users\iamni\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54658/devtoo..., se:cdpVersion: 127.0.2651.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (9c824eb0c8191e83705ca0aeb5979b5c)] -&gt; xpath: //a[text()=&apos;Laptops&apos;]]
-Session ID: 9c824eb0c8191e83705ca0aeb5979b5c
+Command: [9dbec65f86a651d6750f165aa610c8e8, clickElement {id=f.97178FF12CE255237A5315E3BF1AABA3.d.CC9E8461EA282BE883825B7EB06CD50D.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56545}, msedge: {msedgedriverVersion: 128.0.2739.42 (e015505d79c9..., userDataDir: C:\Users\iamni\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56545/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9dbec65f86a651d6750f165aa610c8e8)] -&gt; xpath: //a[text()=&apos;Laptops&apos;]]
+Session ID: 9dbec65f86a651d6750f165aa610c8e8
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -150,7 +150,7 @@ Session ID: 9c824eb0c8191e83705ca0aeb5979b5c
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at com.tmb.pages.BasePage.click(BasePage.java:17)
 	at com.tmb.pages.AmazonHamburgerMenuPage.clickOnSubMenuItem(AmazonHamburgerMenuPage.java:20)
-	at com.tmb.tests.AmazonDemoTests.amazonTest(AmazonDemoTests.java:17)
+	at com.tmb.tests.AmazonDemoTests.amazonTest(AmazonDemoTests.java:20)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
@@ -227,7 +227,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'amazonTest')
 data.setCell(0, 2, 'com.tmb.tests.AmazonDemoTests')
-data.setCell(0, 3, 2035);
+data.setCell(0, 3, 2202);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -267,11 +267,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">amazonTest({fname=, password=, browser=edge, testname=amazonTest, execute=yes, menutext=Laptops, username=})</span>
-                <span class="method-start">4380 ms</span>
+                <span class="method-start">7248 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6835 ms</span>
+                <span class="method-start">9904 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
