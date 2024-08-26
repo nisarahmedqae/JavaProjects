@@ -3,6 +3,7 @@ package com.tmb.pages;
 import org.openqa.selenium.By;
 
 import com.tmb.enums.WaitStrategy;
+import com.tmb.utils.DecodeUtils;
 
 public final class OrangeHRMLoginPage extends BasePage {
 	// All your page methods needs to have some return type
@@ -17,7 +18,7 @@ public final class OrangeHRMLoginPage extends BasePage {
 	}
 
 	public OrangeHRMLoginPage enterPassword(String password) {
-		sendKeys(textboxPassword, password, WaitStrategy.CLICKABLE, "Password");
+		sendKeys(textboxPassword, DecodeUtils.getDecodedString(password), WaitStrategy.CLICKABLE, "Password");
 		return this;
 	}
 
