@@ -4,7 +4,7 @@ public class PalindromeNumber {
 
 	public static void main(String[] args) {
 		int num = 16461;
-		int orgNum = num;
+		int oriNum = num;
 		int rev = 0;
 
 		while (num > 0) {
@@ -13,10 +13,10 @@ public class PalindromeNumber {
 		}
 		System.out.println(rev);
 
-		if (orgNum == rev) {
-			System.out.println(orgNum + " Palindrome number");
+		if (oriNum == rev) {
+			System.out.println(oriNum + " Palindrome number");
 		} else {
-			System.out.println(orgNum + " not a Palindrome number");
+			System.out.println(oriNum + " not a Palindrome number");
 		}
 	}
 
