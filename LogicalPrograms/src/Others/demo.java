@@ -1,26 +1,28 @@
 package Others;
 
+import java.util.ArrayList;
+
 public class demo {
 
 	public static void main(String[] args) {
-// parenthesis ()
-// brackets []
-// curly braces {}
+		// print NonRepeatingNumber from the array
 
-		String[] chotaArr = { "nisar", "kayenat", "ahmed", "fatma" };
-		//System.out.println(chotaArr.length);
+		int[] arr = { 4, 5, 5, 5, 4, 6, 6, 0, 4,9 };
+		ArrayList<Integer> uniqueNumbersList = new ArrayList<>();
 
-		for (int i = 0; i < 4; i++) {
-			// System.out.println(chotaArr[i]); // value[2]
+		for (int i = 0; i < arr.length; i++) {
+			int count = 0;
+			for (int j = 0; j < arr.length; j++) {
+				if (arr[i] == arr[j]) {
+					count++;
+				}
+			}
+			if (count == 1) {
+				uniqueNumbersList.add(arr[i]);
+			}
 		}
+		System.out.println("Unique numbers are: " + uniqueNumbersList);
 
-		int value[] = { 620, 502, 727, 12, 14, 6,122, 666 };
-
-		// extended for loop
-		for(String kuchbhiNaam : chotaArr) {
-			System.out.println(kuchbhiNaam);
-		}
-		
 	}
 
 }
