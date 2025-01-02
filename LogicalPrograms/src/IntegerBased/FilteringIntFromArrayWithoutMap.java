@@ -1,11 +1,11 @@
-package Others;
+package IntegerBased;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
-public class demo {
+public class FilteringIntFromArrayWithoutMap {
 
 	public static void main(String[] args) {
-		// print NonRepeatingNumber from the array
 
 		int[] arr = { 4, 5, 5, 5, 4, 6, 6, 0, 4, 9 };
 		ArrayList<Integer> uniqueNumbersList = new ArrayList<>();
@@ -24,5 +24,4 @@ public class demo {
 		System.out.println("Unique numbers are: " + uniqueNumbersList);
 
 	}
-
 }
