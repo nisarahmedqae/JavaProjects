@@ -1,5 +1,7 @@
 package NaveenAutomationLabs.StringPrograms;
 
+import java.util.Arrays;
+
 import org.apache.commons.lang3.StringUtils;
 
 public class RemoveWhiteSpaces {
@@ -32,7 +34,7 @@ public class RemoveWhiteSpaces {
 		String str5 = "   This   is my java code";
 		String[] splitStr = str5.split("\\s");
 		StringBuffer stringBuffer = new StringBuffer();
-
+		
 		for (String e : splitStr) {
 			stringBuffer.append(e);
 		}

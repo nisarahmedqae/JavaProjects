@@ -5,17 +5,21 @@ import java.util.Arrays;
 public class demo {
 
 	public static void main(String[] args) {
-		String str = "Java     programming  java    oops";
-		String[] strArr = str.split(" ");
-		int count = 0;
-		System.out.println(Arrays.toString(strArr));
+		int num = 12345;
+		rev(num);
+
 		
-		for(String ele: strArr) {
-			if(ele != " ") {
-				count++;
-			}
+	}
+	
+	public static void rev(int num) {
+		int sum = 0;
+		if(num >=0) {
+			int lastDigit = num % 10;
+			sum = sum * 10 + lastDigit;
+			System.out.print(sum);
+			rev( num/10);
 		}
-		System.out.println(count);
+		
 	}
 
 }

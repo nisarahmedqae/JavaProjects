@@ -6,19 +6,19 @@ public class ShiftZerosToRight {
 		int[] arr = { 1, 0, 2, 0, 3, 0, 4, 5, 0, 6 };
 
 		int len = arr.length;
-		int nonZeroIndex = 0; // Index to track non-zero elements
+		int index = 0; // Index to track non-zero elements
 
 		// Traverse the array
 		for (int i = 0; i < len; i++) {
 			if (arr[i] != 0) {
 				// If the current element is non-zero, move it to the left
-				arr[nonZeroIndex] = arr[i];
-				nonZeroIndex++;
+				arr[index] = arr[i];
+				index++;
 			}
 		}
 
 		// Fill the remaining elements with zeros
-		for (int i = nonZeroIndex; i < len; i++) {
+		for (int i = index; i < len; i++) {
 			arr[i] = 0;
 		}
 

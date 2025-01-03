@@ -28,8 +28,8 @@ public class FileContentCount {
 			wordCount = wordCount + words.length;
 
 			// chars
-			for (String word : words) {
-				charCount = charCount + word.length();
+			for (String ch : words) {
+				charCount = charCount + ch.length();
 			}
 			currLine = bufferedReader.readLine();
 		}
