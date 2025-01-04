@@ -14,14 +14,14 @@ public class ReverseWordsKeepingSpacesIntact {
 			}
 		}
 
-		int j = result.length - 1;
-		for (int i = 0; i < arr.length; i++) {
+		int index = 0;
+		for (int i = arr.length-1; i >=0 ; i--) {
 			if (arr[i] != ' ') {
-				while (result[j] == ' ') {
-					j--;
+				while (result[index] == ' ') {
+					index++;
 				}
-				result[j] = arr[i];
-				j--;
+				result[index] = arr[i];
+				index++;
 			}
 		}
 		System.out.println(result);
