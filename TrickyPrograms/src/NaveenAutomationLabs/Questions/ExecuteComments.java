@@ -5,7 +5,7 @@ public class ExecuteComments {
 	public static void main(String[] args) {
 		// can we execute comments in java
 		// yes through Unicode Characters called carriage return
-		// it will push everything in front of it to next line so it wll not be considered as comment
+		// it will push everything in front of it to next line so it will not be considered as comment
 
 		int value = 10;
 		

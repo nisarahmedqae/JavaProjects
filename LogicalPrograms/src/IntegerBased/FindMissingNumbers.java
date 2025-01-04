@@ -11,14 +11,14 @@ public class FindMissingNumbers {
 		int max = 0;
 		List<Integer> oriList = new ArrayList<>();
 
-		for (int num : arr) {
-			if (num < min) {
-				min = num;
+		for (int ele : arr) {
+			if (ele < min) {
+				min = ele;
 			}
-			if (num > max) {
-				max = num;
+			if (ele > max) {
+				max = ele;
 			}
-			oriList.add(num);
+			oriList.add(ele);
 		}
 
 		// Collect the missing numbers

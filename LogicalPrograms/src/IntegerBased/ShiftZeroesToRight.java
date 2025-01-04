@@ -10,12 +10,14 @@ public class ShiftZeroesToRight {
 		int[] result = new int[arr.length];
 		int index = 0;
 
+		// Starting from 0th index so filling elements first
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] != 0) {
 				result[index++] = arr[i];
 			}
 		}
 
+		// Fill the remaining elements with zeros
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 0) {
 				result[index++] = 0;

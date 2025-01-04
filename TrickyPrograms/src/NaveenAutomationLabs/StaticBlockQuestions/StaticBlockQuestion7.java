@@ -23,5 +23,6 @@ public class StaticBlockQuestion7 {
 		System.out.println("Main Method");
 		new StaticBlockQuestion7();
 		// first preference will be given to Instance Initialization Block before constructor
+		new StaticBlockQuestion7();
 	}
 }

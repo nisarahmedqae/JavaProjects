@@ -10,7 +10,7 @@ public class StaticFinal {
 }
 
 class Main {
-	public static final int x = 100; // if we remove final then only class will be loaded
+	static final int x = 100; // if we remove final then only class will be loaded
 	// and static block will execute else it will just take value of x with final
 	// keyword
 
