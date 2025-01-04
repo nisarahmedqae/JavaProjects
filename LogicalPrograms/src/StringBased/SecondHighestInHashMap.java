@@ -21,6 +21,7 @@ public class SecondHighestInHashMap {
 		List<Integer> valuesList = new ArrayList<>(hashmap.values());
 		Collections.sort(valuesList, Comparator.reverseOrder());
 
+		System.out.println(valuesList);
 		System.out.println(valuesList.get(1));
 
 	}

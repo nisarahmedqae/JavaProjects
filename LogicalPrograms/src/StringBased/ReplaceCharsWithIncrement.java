@@ -7,14 +7,14 @@ public class ReplaceCharsWithIncrement {
 		String result = "";
 		int count = 1;
 
-		for (char ch : input.toCharArray()) {
-			if (ch == 'o') {
+		for (char ele : input.toCharArray()) {
+			if (ele == 'o') {
 				for (int i = 0; i < count; i++) {
 					result = result + '&';
 				}
 				count++;
 			} else {
-				result = result + ch;
+				result = result + ele;
 			}
 		}
 

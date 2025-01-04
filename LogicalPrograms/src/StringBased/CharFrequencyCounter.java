@@ -8,20 +8,20 @@ public class CharFrequencyCounter {
 
 		String input = "aabbcccdd"; // Output = a2b2c3d2
 		char[] charArr = input.toCharArray();
-		String result = "";
-
-		HashMap<Character, Integer> hashmap = new HashMap<Character, Integer>();
-		for (char ch : charArr) {
-			if (hashmap.get(ch) == null) {
-				hashmap.put(ch, 1);
+		HashMap<Character, Integer> hashmap = new HashMap<>();
+		
+		for (char ele : charArr) {
+			if (hashmap.get(ele) == null) {
+				hashmap.put(ele, 1);
 			} else {
-				hashmap.put(ch, hashmap.get(ch) + 1);
+				hashmap.put(ele, hashmap.get(ele) + 1);
 			}
 		}
 		System.out.println(hashmap);
 
-		for (char ch : hashmap.keySet()) {
-			result = result + ch + hashmap.get(ch);
+		String result = "";
+		for (char ele : hashmap.keySet()) {
+			result = result + ele + hashmap.get(ele);
 		}
 		System.out.println(result);
 
