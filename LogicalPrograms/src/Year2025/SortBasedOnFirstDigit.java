@@ -1,8 +1,8 @@
-package Others;
+package Year2025;
 
 import java.util.Arrays;
 
-public class demo {
+public class SortBasedOnFirstDigit {
 
 	public static void main(String[] args) {
 		// Input array
