@@ -1,36 +1,25 @@
 package Others;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class demo {
 
 	public static void main(String[] args) {
-		// Input array
-		int[] input = { 3, 45, 2, 85, 84, 9, 777 };
+		String[] words = { "eat", "tea", "tan", "ate", "nat", "bat" };
 
-		// Convert int array to Integer array for custom sorting
-		Integer[] inputArray = Arrays.stream(input).boxed().toArray(Integer[]::new);
+		Map<String, List<String>> map = new HashMap<>();
 
-		// Sort the array based on custom comparator
-		Arrays.sort(inputArray, (a, b) -> {
-			// Get the first digit of each number
-			int firstDigitA = (a >= 10) ? Integer.parseInt(Integer.toString(a).substring(0, 1)) : a;
-			int firstDigitB = (b >= 10) ? Integer.parseInt(Integer.toString(b).substring(0, 1)) : b;
-
-			// Compare first digits in descending order; if equal, compare the whole number
-			if (firstDigitA == firstDigitB) {
-				return b - a;
-			}
-			return firstDigitB - firstDigitA;
-		});
-
-		// Concatenate the sorted numbers into a single string
-		StringBuilder result = new StringBuilder();
-		for (int num : inputArray) {
-			result.append(num);
+		for (String ele : words) {
+			char[] arr = ele.toCharArray();
+			Arrays.sort(arr);
+			String str = new String(arr);
+			map.putIfAbsent(str, new ArrayList<>());
+			map.get(str).add(ele);
 		}
-
-		// Print the concatenated result
-		System.out.println("Output: " + result);
+		System.out.println(map.values());
 	}
 }
